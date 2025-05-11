@@ -17,29 +17,29 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 **Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.**
 
-+---------------+----------------------------------------+-------------------+------------+
-| Columna       | Variable                               | Tipo de variable  | Escala     |
-+===============+========================================+===================+============+
-| 4             | prom_estudio_dia                       | Numérica continua | Razón      |
-|               |                                        |                   |            |
-|               | Horas de estudio por día               |                   |            |
-+---------------+----------------------------------------+-------------------+------------+
-| 5/26/27/28/29 | prom_dia_whatsapp                      | Numérica continua | Razón      |
-|               |                                        |                   |            |
-|               | prom_dia_instagram                     |                   |            |
-|               |                                        |                   |            |
-|               | prom_dia_linkedin                      |                   |            |
-|               |                                        |                   |            |
-|               | prom_dia_x                             |                   |            |
-|               |                                        |                   |            |
-|               | prom_dia_tiktok                        |                   |            |
-|               |                                        |                   |            |
-|               | Horas de uso de redes sociales por día |                   |            |
-+---------------+----------------------------------------+-------------------+------------+
-| 6             | prom_ciclo_pasado                      | Numérica continua | Razón      |
-|               |                                        |                   |            |
-|               | Promedio ponderado del ciclo anterior  |                   |            |
-+---------------+----------------------------------------+-------------------+------------+
++---------------+----------------------------------------+-------------------+-------------+
+| Columna       | Variable                               | Tipo de variable  | Escala      |
++===============+========================================+===================+=============+
+| 4             | prom_estudio_dia                       | Numérica continua | Razón       |
+|               |                                        |                   |             |
+|               | Horas de estudio por día               |                   |             |
++---------------+----------------------------------------+-------------------+-------------+
+| 5/26/27/28/29 | prom_dia_whatsapp                      | Numérica continua | Razón       |
+|               |                                        |                   |             |
+|               | prom_dia_instagram                     |                   |             |
+|               |                                        |                   |             |
+|               | prom_dia_linkedin                      |                   |             |
+|               |                                        |                   |             |
+|               | prom_dia_x                             |                   |             |
+|               |                                        |                   |             |
+|               | prom_dia_tiktok                        |                   |             |
+|               |                                        |                   |             |
+|               | Horas de uso de redes sociales por día |                   |             |
++---------------+----------------------------------------+-------------------+-------------+
+| 6             | prom_ciclo_pasado                      | Numérica continua | Razón       |
+|               |                                        |                   |             |
+|               | Promedio ponderado del ciclo anterior  |                   |             |
++---------------+----------------------------------------+-------------------+-------------+
 
 ### Objetivo 2
 
@@ -65,25 +65,25 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 **Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
 
-+-----------+-------------------------------------------+-------------------+-----------+
-| Columna   | Variable                                  | Tipo de variable  | Escala    |
-+===========+===========================================+===================+===========+
-| 14        | notificaciones_estudio_diario             | Numérica discreta | Razón     |
-|           |                                           |                   |           |
-|           | (Veces que revisa redes mientras estudia) |                   |           |
-+-----------+-------------------------------------------+-------------------+-----------+
-| 16        | tipo_contenido_redes_sociales             | Categórica        | Nominal   |
-|           |                                           |                   |           |
-|           | (Tipo de contenido que consume)           |                   |           |
-+-----------+-------------------------------------------+-------------------+-----------+
-| 22        | uso_redes_academicas                      | Categórica        | Nominal   |
-|           |                                           |                   |           |
-|           | (Uso de redes para contenido académico)   |                   |           |
-+-----------+-------------------------------------------+-------------------+-----------+
-| 23        | satisfaccion_rendimiento_academico        | Categórica        | Ordinal   |
-|           |                                           |                   |           |
-|           | (Satisfacción con rendimiento académico)  |                   |           |
-+-----------+-------------------------------------------+-------------------+-----------+
++------------+-------------------------------------------+-------------------+------------+
+| Columna    | Variable                                  | Tipo de variable  | Escala     |
++============+===========================================+===================+============+
+| 14         | notificaciones_estudio_diario             | Numérica discreta | Razón      |
+|            |                                           |                   |            |
+|            | (Veces que revisa redes mientras estudia) |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 16         | tipo_contenido_redes_sociales             | Categórica        | Nominal    |
+|            |                                           |                   |            |
+|            | (Tipo de contenido que consume)           |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 22         | uso_redes_academicas                      | Categórica        | Nominal    |
+|            |                                           |                   |            |
+|            | (Uso de redes para contenido académico)   |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 23         | satisfaccion_rendimiento_academico        | Categórica        | Ordinal    |
+|            |                                           |                   |            |
+|            | (Satisfacción con rendimiento académico)  |                   |            |
++------------+-------------------------------------------+-------------------+------------+
 
 ### Objetivo 4
 
@@ -121,29 +121,29 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 **Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la concentración durante el estudio.**
 
-+-----------+---------------------------------------------+-------------------+-----------+
-| Columna   | Variable                                    | Tipo de variable  | Escala    |
-+===========+=============================================+===================+===========+
-| 11        | horas_sueño_xnoche                          | Numérica continua | Razón     |
-|           |                                             |                   |           |
-|           | (Horas de sueño por noche)                  |                   |           |
-+-----------+---------------------------------------------+-------------------+-----------+
-| 14        | notificaciones_estudio_diario               | Numérica discreta | Razón     |
-|           |                                             |                   |           |
-|           | (Veces que revisa redes mientras estudia)   |                   |           |
-+-----------+---------------------------------------------+-------------------+-----------+
-| 15        | dias_redes_antes_de_dormir                  | Numérica discreta | Razón     |
-|           |                                             |                   |           |
-|           | (Días que usa redes antes de dormir)        |                   |           |
-+-----------+---------------------------------------------+-------------------+-----------+
-| 18        | afecta_concentracion_rendimiento            | Categórica        | Nominal   |
-|           |                                             |                   |           |
-|           | (Percepción de afectación en concentración) |                   |           |
-+-----------+---------------------------------------------+-------------------+-----------+
-| 21        | momento_uso_redes_sociales                  | Categórica        | Nominal   |
-|           |                                             |                   |           |
-|           | (Momento del día con mayor uso de redes)    |                   |           |
-+-----------+---------------------------------------------+-------------------+-----------+
++------------+---------------------------------------------+-------------------+------------+
+| Columna    | Variable                                    | Tipo de variable  | Escala     |
++============+=============================================+===================+============+
+| 11         | horas_sueño_xnoche                          | Numérica continua | Razón      |
+|            |                                             |                   |            |
+|            | (Horas de sueño por noche)                  |                   |            |
++------------+---------------------------------------------+-------------------+------------+
+| 14         | notificaciones_estudio_diario               | Numérica discreta | Razón      |
+|            |                                             |                   |            |
+|            | (Veces que revisa redes mientras estudia)   |                   |            |
++------------+---------------------------------------------+-------------------+------------+
+| 15         | dias_redes_antes_de_dormir                  | Numérica discreta | Razón      |
+|            |                                             |                   |            |
+|            | (Días que usa redes antes de dormir)        |                   |            |
++------------+---------------------------------------------+-------------------+------------+
+| 18         | afecta_concentracion_rendimiento            | Categórica        | Nominal    |
+|            |                                             |                   |            |
+|            | (Percepción de afectación en concentración) |                   |            |
++------------+---------------------------------------------+-------------------+------------+
+| 21         | momento_uso_redes_sociales                  | Categórica        | Nominal    |
+|            |                                             |                   |            |
+|            | (Momento del día con mayor uso de redes)    |                   |            |
++------------+---------------------------------------------+-------------------+------------+
 
 ## Avance 2
 
@@ -686,7 +686,5 @@ DF_1[[27]] <- as.factor(DF_1[[27]])  # Uso Instagram
 DF_1[[28]] <- as.factor(DF_1[[28]])  # Uso TikTok
 DF_1[[29]] <- as.factor(DF_1[[29]])  # Uso Facebook/meta o X
 
-# Eliminar filas con más de 100 amigos en la columna 14
-DF_1 <- DF_1[DF_1[[14]] <= 100, ]
 
 ```
