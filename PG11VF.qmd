@@ -1,0 +1,669 @@
+---
+title: "Influencia de las redes sociales en el estilo de vida de los jóvenes universitarios"
+format: html
+---
+
+## Tema del Proyecto
+
+**Influencia de las redes sociales en el estilo de vida de los jóvenes universitarios.**
+
+## Objetivo General
+
+Analizar el uso de las redes sociales en el público joven universitario y su impacto en su estilo de vida (horas de sueño, horas de estudio, horas de ejercicio, rendimiento académico, actividades extracurriculares).
+
+## Objetivos Específicos
+
+### Objetivo 1
+
+**Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.**
+
++---------------+----------------------------------------+-------------------+--------+
+| Columna       | Variable                               | Tipo de variable  | Escala |
++===============+========================================+===================+========+
+| 4             | prom_estudio_dia                       | Numérica continua | Razón  |
+|               |                                        |                   |        |
+|               | Horas de estudio por día               |                   |        |
++---------------+----------------------------------------+-------------------+--------+
+| 5/26/27/28/29 | prom_dia_whatsapp                      | Numérica continua | Razón  |
+|               |                                        |                   |        |
+|               | prom_dia_instagram                     |                   |        |
+|               |                                        |                   |        |
+|               | prom_dia_linkedin                      |                   |        |
+|               |                                        |                   |        |
+|               | prom_dia_x                             |                   |        |
+|               |                                        |                   |        |
+|               | prom_dia_tiktok                        |                   |        |
+|               |                                        |                   |        |
+|               | Horas de uso de redes sociales por día |                   |        |
++---------------+----------------------------------------+-------------------+--------+
+| 6             | prom_ciclo_pasado                      | Numérica continua | Razón  |
+|               |                                        |                   |        |
+|               | Promedio ponderado del ciclo anterior  |                   |        |
++---------------+----------------------------------------+-------------------+--------+
+
+### Objetivo 2
+
+**Examinar cómo varía la percepción del impacto de las redes sociales sobre la salud mental y el rendimiento académico según el sexo y el ciclo academico.**
+
++---------+-----------------------------------------+-------------------+---------+
+| Columna | Variable                                | Tipo de variable  | Escala  |
++=========+=========================================+===================+=========+
+| 2       | sexo                                    | Categórica        | Nominal |
++---------+-----------------------------------------+-------------------+---------+
+| 7       | ciclo                                   | Numérica discreta | Razón   |
++---------+-----------------------------------------+-------------------+---------+
+| 18      | concentracion_rendimiento_academico     | Categórica        | Nominal |
+|         |                                         |                   |         |
+|         | (Percepción del impacto en rendimiento) |                   |         |
++---------+-----------------------------------------+-------------------+---------+
+| 20      | impactos_redes_salud_mental             | Categórica        | Ordinal |
+|         |                                         |                   |         |
+|         | (Impacto percibido en salud mental)     |                   |         |
++---------+-----------------------------------------+-------------------+---------+
+
+### Objetivo 3
+
+**Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
+
++---------+-------------------------------------------+-------------------+---------+
+| Columna | Variable                                  | Tipo de variable  | Escala  |
++=========+===========================================+===================+=========+
+| 14      | notificaciones_estudio_diario             | Numérica discreta | Razón   |
+|         |                                           |                   |         |
+|         | (Veces que revisa redes mientras estudia) |                   |         |
++---------+-------------------------------------------+-------------------+---------+
+| 16      | tipo_contenido_redes_sociales             | Categórica        | Nominal |
+|         |                                           |                   |         |
+|         | (Tipo de contenido que consume)           |                   |         |
++---------+-------------------------------------------+-------------------+---------+
+| 22      | uso_redes_academicas                      | Categórica        | Nominal |
+|         |                                           |                   |         |
+|         | (Uso de redes para contenido académico)   |                   |         |
++---------+-------------------------------------------+-------------------+---------+
+| 23      | satisfaccion_rendimiento_academico        | Categórica        | Ordinal |
+|         |                                           |                   |         |
+|         | (Satisfacción con rendimiento académico)  |                   |         |
++---------+-------------------------------------------+-------------------+---------+
+
+### Objetivo 4
+
+**Analizar la relación entre el uso diario de redes sociales y la participación en actividades extracurriculares, considerando la motivación percibida.**
+
++---------------+-----------------------------------------------+-------------------+---------+
+| Columna       | Variable                                      | Tipo de variable  | Escala  |
++===============+===============================================+===================+=========+
+| 5/26/27/28/29 | prom_dia_whatsapp                             | Numérica continua | Razón   |
+|               |                                               |                   |         |
+|               | prom_dia_instagram                            |                   |         |
+|               |                                               |                   |         |
+|               | prom_dia_linkedin                             |                   |         |
+|               |                                               |                   |         |
+|               | prom_dia_x                                    |                   |         |
+|               |                                               |                   |         |
+|               | prom_dia_tiktok                               |                   |         |
+|               |                                               |                   |         |
+|               | (Horas de uso de redes sociales por día)      |                   |         |
++---------------+-----------------------------------------------+-------------------+---------+
+| 9             | actividad_extracurricular_actual              | Categórica        | Nominal |
+|               |                                               |                   |         |
+|               | (Tipo de actividad extracurricular)           |                   |         |
++---------------+-----------------------------------------------+-------------------+---------+
+| 19            | impacto_redes_actividades_extracurriculares   | Categórica        | Ordinal |
+|               |                                               |                   |         |
+|               | (Efecto percibido en motivación)              |                   |         |
++---------------+-----------------------------------------------+-------------------+---------+
+| 25            | frecuencia_descubrimiento_actividades_redes   | Categórica        | Ordinal |
+|               |                                               |                   |         |
+|               | (Frecuencia de descubrimiento de actividades) |                   |         |
++---------------+-----------------------------------------------+-------------------+---------+
+
+### Objetivo 5
+
+**Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la concentración durante el estudio.**
+
++---------+---------------------------------------------+-------------------+---------+
+| Columna | Variable                                    | Tipo de variable  | Escala  |
++=========+=============================================+===================+=========+
+| 11      | horas_sueño_xnoche                          | Numérica continua | Razón   |
+|         |                                             |                   |         |
+|         | (Horas de sueño por noche)                  |                   |         |
++---------+---------------------------------------------+-------------------+---------+
+| 14      | notificaciones_estudio_diario               | Numérica discreta | Razón   |
+|         |                                             |                   |         |
+|         | (Veces que revisa redes mientras estudia)   |                   |         |
++---------+---------------------------------------------+-------------------+---------+
+| 15      | dias_redes_antes_de_dormir                  | Numérica discreta | Razón   |
+|         |                                             |                   |         |
+|         | (Días que usa redes antes de dormir)        |                   |         |
++---------+---------------------------------------------+-------------------+---------+
+| 18      | afecta_concentracion_rendimiento            | Categórica        | Nominal |
+|         |                                             |                   |         |
+|         | (Percepción de afectación en concentración) |                   |         |
++---------+---------------------------------------------+-------------------+---------+
+| 21      | momento_uso_redes_sociales                  | Categórica        | Nominal |
+|         |                                             |                   |         |
+|         | (Momento del día con mayor uso de redes)    |                   |         |
++---------+---------------------------------------------+-------------------+---------+
+
+## Avance 2
+
+```{r setup}
+library(readr)
+library(ggplot2)
+```
+
+```{r lectura}
+DF_1 <- read_csv("Estudiantes.csv", col_types = cols(.default = "c"))
+DF_2 <- DF_1  # Backup
+```
+
+### Limpieza general
+
+```{r limpieza_general}
+DF_1 <- DF_1[, colSums(is.na(DF_1)) < nrow(DF_1)]
+DF_1 <- DF_1[, colMeans(is.na(DF_1)) < 0.5]
+DF_1 <- DF_1[rowSums(is.na(DF_1)) != ncol(DF_1), ]
+DF_1 <- DF_1[!duplicated(DF_1), ]
+DF_1 <- DF_1[, -(1:3)]
+```
+
+### Limpieza por columnas
+
+#### Edad
+
+```{r edad}
+DF_1[[1]] <- as.integer(DF_1[[1]])
+DF_1 <- DF_1[DF_1[[1]] >= 16 & DF_1[[1]] <= 29, ]
+names(DF_1)[1] <- "edad"
+
+# Histograma
+ggplot(DF_1, aes(x = edad)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Distribución de la Edad", x = "Edad", y = "Frecuencia") +
+  theme_minimal()
+```
+
+#### Sexo
+
+```{r sexo}
+library(ggplot2)
+
+# Filtrar los datos para que solo incluyan "Masculino" y "Femenino"
+DF_1 <- DF_1[DF_1[[2]] %in% c("Masculino", "Femenino"), ]
+names(DF_1)[2] <- "sexo"
+
+# Crear gráfico de torta
+ggplot(DF_1, aes(x = "", fill = sexo)) +
+  geom_bar(width = 1, stat = "count") +
+  coord_polar("y") +
+  labs(title = "Distribución de Género") +
+  theme_void() +
+  theme(legend.title = element_blank())  # Opcional, para quitar el título de la leyenda
+
+```
+
+#### Tipo de universidad
+
+```{r tipo_universidad}
+
+# Filtrar los datos para que solo incluyan "Privada" y "Pública"
+DF_1 <- DF_1[DF_1[[3]] %in% c("Privada", "Pública"), ]
+names(DF_1)[3] <- "tipo_universidad"
+
+# Crear gráfico de torta para "tipo_universidad"
+ggplot(DF_1, aes(x = "", fill = tipo_universidad)) +
+  geom_bar(width = 1, stat = "count") +
+  coord_polar("y") +
+  labs(title = "Distribución de Tipo de Universidad") +
+  theme_void() +
+  theme(legend.title = element_blank())  # Opcional, para quitar el título de la leyenda
+
+```
+
+#### Promedio horas estudio por día
+
+```{r estudio_dia}
+# Suprimir salidas intermedias
+invisible(table(DF_1[[4]], useNA = "ifany"))
+invisible(unique(DF_1[[4]][!grepl("^\\d+$", DF_1[[4]])]))
+
+# Limpieza y conversión
+DF_1[[4]] <- as.character(DF_1[[4]])
+DF_1[[4]][!grepl("^\\d+$", DF_1[[4]])] <- NA
+DF_1[[4]] <- as.integer(DF_1[[4]])
+DF_1[[4]][DF_1[[4]] > 20] <- NA
+names(DF_1)[4] <- "prom_estudio_dia"
+
+# Solo el gráfico como salida
+plot(density(DF_1$prom_estudio_dia, na.rm = TRUE),
+     main = "Densidad de Horas de Estudio por Día",
+     xlab = "Horas de estudio", col = "darkred", lwd = 2)
+
+
+
+```
+
+#### Promedio ponderado del ciclo pasado
+
+```{r promedio_ponderado}
+# Suprimir advertencias y salidas no deseadas
+DF_1[[6]] <- as.character(DF_1[[6]])
+DF_1[[6]][!grepl("^\\d+(\\.\\d+)?$", DF_1[[6]])] <- NA
+DF_1[[6]] <- round(as.double(DF_1[[6]]), 2)
+names(DF_1)[6] <- "prom_ciclo_pasado"
+
+# Solo mostrar el gráfico
+boxplot(DF_1$prom_ciclo_pasado,
+        main = "Distribución del Promedio Ponderado",
+        ylab = "Promedio",
+        col = "#FF5733",
+        border = "#C70039")
+
+```
+
+#### Ciclo académico
+
+```{r ciclo}
+DF_1[[7]] <- as.numeric(as.character(DF_1[[7]]))
+DF_1[[7]] <- round(DF_1[[7]])
+DF_1[[7]] <- as.integer(DF_1[[7]])
+DF_1 <- DF_1[DF_1[[7]] %in% 1:10, ]
+names(DF_1)[7] <- "ciclo"
+barplot(table(DF_1$ciclo),
+        main = "Distribución de Estudiantes por Ciclo",
+        xlab = "Ciclo",
+        ylab = "Frecuencia",
+        col = "#3498DB",
+        border = "white")
+
+```
+
+#### Uso diario de redes sociales (Whatsapp, Instagram, TikTok, LinkedIn, X)
+
+```{r uso_redes}
+# Definimos los rangos válidos
+rangos_validos <- c("0 horas (no lo uso)", "Entre 1-3 horas", "Entre 3-6 horas", "Entre 6-9 horas", "Entre 9-12 horas")
+
+# Whatsapp
+DF_1[[5]][!DF_1[[5]] %in% rangos_validos] <- NA
+names(DF_1)[5] <- "prom_dia_whatsapp"
+
+# Instagram
+DF_1[[26]][!DF_1[[26]] %in% rangos_validos] <- NA
+names(DF_1)[26] <- "prom_dia_instagram"
+
+# TikTok
+DF_1[[27]][!DF_1[[27]] %in% rangos_validos] <- NA
+names(DF_1)[27] <- "prom_dia_tiktok"
+
+# LinkedIn
+DF_1[[28]][!DF_1[[28]] %in% rangos_validos] <- NA
+names(DF_1)[28] <- "prom_dia_linkedin"
+
+# X
+DF_1[[29]][!DF_1[[29]] %in% rangos_validos] <- NA
+names(DF_1)[29] <- "prom_dia_x"
+
+
+```
+
+#### Asignaturas cursadas actualmente
+
+```{r}
+DF_1[[8]] <- as.integer(DF_1[[8]])
+boxplot(DF_1[[8]],
+        main = "Cuántas asignaturas cursas actualmente",
+        ylab = "Cursos",
+        col = "lightgreen",
+        border = "darkgreen")
+names(DF_1)[8] <- "total_cursos_actuales"
+
+```
+
+#### Actividad Extracurricular actual
+
+```{r}
+DF_1[!(DF_1[[9]] %in% c("Arte", "Deportes", "Música", "Voluntariado", "Club Académico", "No participo en ninguna")), ]
+```
+
+```{r}
+names(DF_1)[9] <- "actividad_extracurricular_actual"
+
+```
+
+#### Horas ejercicio fisico a la semana
+
+```{r}
+DF_1[[10]] <- as.integer(DF_1[[10]])
+```
+
+```{r}
+boxplot(DF_1[[10]],
+        main = "Horas semanales de ejercicio físico",
+        ylab = "Horas",
+        col = "lightgreen",
+        border = "darkgreen")
+names(DF_1)[10] <- "horas_ejercicio_semanal"
+
+```
+
+#### Horas de dormir por noche
+
+```{r}
+DF_1[[11]] <- as.integer(DF_1[[11]])
+```
+
+```{r}
+boxplot(DF_1[[11]],
+        main = "Cuántas horas duermes aproximadamente por noche",
+        ylab = "Horas",
+        col = "lightgreen",
+        border = "darkgreen")
+names(DF_1)[11] <- "horas_sueño_xnoche"
+
+```
+
+#### Red Social mas utilizada
+
+```{r}
+DF_1[!(DF_1[[12]] %in% c("Whatsapp", "Instagram", "Tiktok", "Facebook / meta", 
+                        "X (Twitter)", "Linkedin", "Telegram", "Discord", "Otro")), ]
+```
+
+```{r}
+names(DF_1)[12] <- "red_mas_usada"
+
+```
+
+#### Tiempo máximo sin revisar redes sociales por dia
+
+```{r}
+DF_1[[13]] <- as.integer(DF_1[[13]])
+```
+
+```{r}
+boxplot(DF_1[[13]],
+        main = "Boxplot del tiempo sin revisar redes sociales",
+        ylab = "Horas",
+        col = "skyblue",        
+        border = "navy",        
+        boxcol = "darkblue",    
+        whiskcol = "gray40",    
+        staplecol = "gray40",   
+        medcol = "red") 
+names(DF_1)[13] <- "tiempo_max_sin_redes_dia"
+
+```
+
+#### Notificaciones redes diario mientras estudias
+
+```{r}
+DF_1[[14]] <- as.integer(DF_1[[14]])
+```
+
+```{r}
+DF_1[DF_1[[14]] > 100, ]
+DF_1[[14]][DF_1[[14]] > 100] <- NA
+```
+
+```{r}
+boxplot(DF_1[[14]],
+        main = "Cuántas veces al día aproximadamente revisas tu teléfono por notificaciones de redes sociales mientras estudias",
+        ylab = "Veces por día",
+        col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")       
+```
+
+```{r}
+names(DF_1)[14] <- "notificaciones_estudio_diario"
+
+```
+
+#### Revisiones redes antes de dormir:
+
+```{r}
+DF_1[[15]] <- as.integer(DF_1[[15]])
+```
+
+```{r}
+boxplot(DF_1[[15]],
+        main = "Cuántos días a la semana sueles usar redes sociales antes de dormir",
+        ylab = "dias",
+        col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[15] <- "dias_redes_antes_de_dormir"
+
+```
+
+#### Contenido consumido principalmente en redes sociales
+
+```{r}
+DF_1[!DF_1[[16]] %in% c("Entretenimiento (ver videos, seguir deportes, escuchar música)", 
+                          "Información (noticias , actualidad)", 
+                          "Educación (contenido académico)", 
+                          "Socializar"), ]
+```
+
+```{r}
+DF_1[[16]][!DF_1[[16]] %in% c("Entretenimiento (ver videos, seguir deportes, escuchar música)", 
+                               "Información (noticias , actualidad)", 
+                               "Educación (contenido académico)", 
+                               "Socializar")] <- NA
+
+```
+
+```{r}
+names(DF_1)[16] <- "tipo_contenido_redes_sociales"
+
+```
+
+#### Satisfacción social presencial con amigos
+
+```{r}
+DF_1[[17]] <- as.integer(DF_1[[17]])
+```
+
+```{r}
+boxplot(DF_1[[17]],
+        main = "Que tan satisfecho estás con tu interacción social presencial con amigos o compañeros en tu centro de estudio y/o trabajo",
+        ylab = "satisfaccion",
+        col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[17] <- "satisfaccion_interaccion_social_presencial"
+
+```
+
+#### Uso de redes sociales afecta tu capacidad de concentración y rendimiento académico
+
+```{r}
+DF_1[[18]] <- as.integer(DF_1[[18]])
+```
+
+```{r}
+boxplot(DF_1[[18]],
+       main = "Consideras que el uso de redes sociales afecta tu capacidad de concentración y rendimiento académico",
+        ylab = "nivel",
+         col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[18] <- "afecta_concentracion_rendimiento"
+
+```
+
+#### Uso de redes sociales motiva/desmotiva/no efecto a participar actividades extracurriculares
+
+```{r}
+DF_1[!DF_1[[19]] %in% c("Motiva", "Desmotiva", "No tiene efecto"), ]
+```
+
+```{r}
+DF_1[[19]][!DF_1[[19]] %in% c("Motiva", "Desmotiva", "No tiene efecto")] <- NA
+```
+
+```{r}
+names(DF_1)[19] <- "impacto_redes_actividades_extracurriculares"
+
+```
+
+#### Impacto del uso excesivo de redes sociales sobre la salud mental y autoestima.
+
+```{r}
+DF_1[[20]] <- as.integer(DF_1[[20]])
+```
+
+```{r}
+boxplot(DF_1[[20]],
+        main = "Qué tanto sientes que el uso excesivo de redes sociales puede afectar tu salud mental ?(autoestima , etc)",
+        ylab = "nivel",
+         col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[20] <- "impacto_redes_salud_mental"
+
+```
+
+#### Momentos del día con mayor uso de redes sociales.
+
+```{r}
+DF_1[!DF_1[[21]] %in% c("Mañana (6am-11:59 am)", "Tarde (12 pm - 6pm)", "Noche(6pm-12 am)", "Madrugada (12am-6am)"), ]
+```
+
+```{r}
+DF_1[[21]][!DF_1[[21]] %in% c("Mañana (6am-11:59 am)", "Tarde (12 pm - 6pm)", "Noche(6pm-12 am)", "Madrugada (12am-6am)")] <- NA
+```
+
+```{r}
+names(DF_1)[21] <- "momento_uso_redes_sociales"
+
+```
+
+#### Uso de redes sociales para acceder a información académica
+
+```{r}
+DF_1[!DF_1[[22]] %in% c("Sí", "No"), ]
+```
+
+```{r}
+names(DF_1)[22] <- "uso_redes_academicas"
+
+```
+
+#### Nivel de satisfacción con el rendimiento académico actual
+
+```{r}
+DF_1[[23]] <- as.integer(DF_1[[23]])
+```
+
+```{r}
+boxplot(DF_1[[23]],
+        main = "Qué tan satisfecho(a) estás con tu rendimiento académico actual",
+        ylab = "nivel",
+         col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[23] <- "satisfaccion_rendimiento_academico"
+
+```
+
+#### Cantidad de amigos de redes sociales con los que interactúas en persona
+
+```{r}
+DF_1[[24]] <- as.integer(DF_1[[24]])
+```
+
+```{r}
+DF_1[DF_1[[24]] > 100, ]
+DF_1[[24]][DF_1[[24]] > 100] <- NA
+```
+
+```{r}
+boxplot(DF_1[[24]],
+        main = "Con cuántos de los amigos que conociste a través de redes sociales interactúas también en persona",
+         ylab = "nivel",
+         col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[24] <- "interaccion_persona_amigos_redes"
+
+```
+
+#### Frecuencia con la que los estudiantes descubren actividades extracurriculares a través de redes sociales
+
+```{r}
+DF_1[[25]] <- as.integer(DF_1[[25]])
+```
+
+```{r}
+head(DF_1[[25]], 10)
+```
+
+```{r}
+boxplot(DF_1[[25]],
+        main = "Con qué frecuencia descubres actividades extracurriculares a través de redes sociales",
+        ylab = "frecuencia",
+         col = "skyblue",      
+        border = "steelblue", 
+        boxcol = "blue4",    
+        whiskcol = "gray40",  
+        staplecol = "gray40", 
+        medcol = "red")
+```
+
+```{r}
+names(DF_1)[25] <- "frecuencia_descubrimiento_actividades_redes"
+
+```
+
+```{r}
+# Resumen descriptivo de todo el dataframe
+summary(DF_1)
+
+
+
+```
+
+```{r}
+str(DF_1)
+```
