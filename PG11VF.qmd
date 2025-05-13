@@ -791,11 +791,11 @@ El gráfico de caja muestra que el **promedio ponderado del ciclo anterior** se 
 
 Según los valores estadísticos:
 
--    El grupo con menor rendimiento promedio es el de **3-6 horas diarias**, con **una media de 12.28**.
+-   El grupo con menor rendimiento promedio es el de **3-6 horas diarias**, con **una media de 12.28**.
 
--    El grupo de **1-3 horas** tiene una media ligeramente superior (**13.45**), al igual que los grupos extremos: **0h** (13.36) y **+9h** (13.19).
+-   El grupo de **1-3 horas** tiene una media ligeramente superior (**13.45**), al igual que los grupos extremos: **0h** (13.36) y **+9h** (13.19).
 
--    Las **medianas son todas iguales o muy cercanas (13-14)**, lo que sugiere **distribuciones similares**
+-   Las **medianas son todas iguales o muy cercanas (13-14)**, lo que sugiere **distribuciones similares**
 
 ```{r}
 ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)), 
@@ -805,7 +805,6 @@ ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)),
        x = "Horas de estudio por día", y = "Promedio ponderado") +
   theme_minimal()
 ```
-
 
 ### Objetivo 3
 
@@ -911,9 +910,6 @@ El análisis muestra una relación inversa entre el uso nocturno de redes social
 
 Esto puede indicar que el uso frecuente de redes sociales en la noche está afectando negativamente la cantidad y calidad del descanso, lo que podría tener repercusiones en el bienestar y rendimiento académico del estudiante.
 
-
-
-
 EDIT
 
 ### OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
@@ -949,10 +945,10 @@ boxplot(horas_sueño_xnoche ~ dias_redes_antes_de_dormir,
 tabla_concentracion <- table(DF_1$afecta_concentracion_rendimiento, DF_1$notificaciones_estudio_diario)
 print(tabla_concentracion)
 
+```
+
 Los resultados muestran una tendencia donde un mayor uso nocturno de redes sociales se asocia con una **reducción en las horas de sueño**. En el boxplot, se observa que quienes usan redes en la noche tienden a dormir menos. Además, a medida que aumentan los días de uso de redes antes de dormir, **las horas de sueño disminuyen levemente**.
 
 Respecto a la concentración, una parte significativa de los estudiantes percibe que las redes sociales **afectan negativamente su rendimiento**. La frecuencia con la que revisan redes mientras estudian (notificaciones_estudio_diario) también parece tener relación con esta percepción.
 
 En conjunto, estos hallazgos sugieren una posible **relación entre el uso nocturno de redes, menor sueño y mayor distracción durante el estudio**, lo cual es consistente con estudios previos sobre hábitos digitales y rendimiento académico.
-
-```
