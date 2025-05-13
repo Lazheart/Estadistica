@@ -698,7 +698,7 @@ str(DF_1)
 
 **DESCRIPTORES**
 
-Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.
+### OBJETIVO 1: Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.
 
 ```{r}
 library(tidyr)
@@ -808,37 +808,43 @@ ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)),
 
 EDIT
 
+### OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
+
 ```{r}
-# Cargar paquetes necesarios
-library(tidyverse)
 
-# Simulamos los datos de ejemplo (adaptar a tu caso)
-set.seed(123)
-DF_1 <- tibble(
-  genero = factor(sample(c("Masculino", "Femenino"), 100, replace = TRUE)),
-  uso_redes = factor(sample(c("Bajo", "Medio", "Alto"), 100, replace = TRUE), ordered = TRUE),
-  horas_suenio = rnorm(100, mean = 6.5, sd = 1),
-  promedio = rnorm(100, mean = 13, sd = 2)
-)
+# Estadística descriptiva general
+summary(DF_1[, c("horas_sueño_xnoche", "notificaciones_estudio_diario", "dias_redes_antes_de_dormir")])
 
-# Revisar estructura de los datos
-str(DF_1)
+# Boxplot: ¿Cómo cambian las horas de sueño según el momento del uso de redes?
+boxplot(horas_sueño_xnoche ~ momento_uso_redes_sociales, 
+        data = DF_1,
+        main = "Horas de sueño según el momento de uso de redes sociales",
+        xlab = "Momento del día con mayor uso de redes",
+        ylab = "Horas de sueño por noche",
+        col = "skyblue")
 
-# Ver tabla de frecuencia de variables categóricas
-table(DF_1$genero)
-table(DF_1$uso_redes)
+# Gráfico de barras: percepción de afectación en la concentración
+barplot(table(DF_1$afecta_concentracion_rendimiento),
+        main = "¿Las redes sociales afectan la concentración?",
+        ylab = "Frecuencia",
+        col = c("tomato", "lightgreen", "lightblue"))
 
-# Visualizar uso de redes por género
-ggplot(DF_1, aes(x = uso_redes, fill = genero)) +
-  geom_bar(position = "dodge") +
-  labs(title = "Uso de redes sociales por género", x = "Nivel de uso de redes", y = "Frecuencia")
+# Boxplot: ¿A mayor uso de redes antes de dormir, menos horas de sueño?
+boxplot(horas_sueño_xnoche ~ dias_redes_antes_de_dormir,
+        data = DF_1,
+        main = "Relación entre días de uso de redes antes de dormir y horas de sueño",
+        xlab = "Días por semana que usa redes antes de dormir",
+        ylab = "Horas de sueño",
+        col = "orchid")
 
-# Comparar promedio académico según uso de redes (boxplot)
-ggplot(DF_1, aes(x = uso_redes, y = promedio, fill = uso_redes)) +
-  geom_boxplot() +
-  labs(title = "Promedio académico según uso de redes sociales", x = "Uso de redes", y = "Promedio")
+# Relación entre interrupciones por redes y concentración percibida
+tabla_concentracion <- table(DF_1$afecta_concentracion_rendimiento, DF_1$notificaciones_estudio_diario)
+print(tabla_concentracion)
 
-# Análisis estadístico
-anova_result <- aov(promedio ~ uso_redes, data = DF_1)
-summary(anova_result)
+Los resultados muestran una tendencia donde un mayor uso nocturno de redes sociales se asocia con una **reducción en las horas de sueño**. En el boxplot, se observa que quienes usan redes en la noche tienden a dormir menos. Además, a medida que aumentan los días de uso de redes antes de dormir, **las horas de sueño disminuyen levemente**.
+
+Respecto a la concentración, una parte significativa de los estudiantes percibe que las redes sociales **afectan negativamente su rendimiento**. La frecuencia con la que revisan redes mientras estudian (notificaciones_estudio_diario) también parece tener relación con esta percepción.
+
+En conjunto, estos hallazgos sugieren una posible **relación entre el uso nocturno de redes, menor sueño y mayor distracción durante el estudio**, lo cual es consistente con estudios previos sobre hábitos digitales y rendimiento académico.
+
 ```
