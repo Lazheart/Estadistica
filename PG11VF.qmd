@@ -167,7 +167,7 @@ DF_1 <- DF_1[!duplicated(DF_1), ]
 DF_1 <- DF_1[, -(1:3)]
 ```
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ### Limpieza por columnas
 
@@ -240,8 +240,6 @@ names(DF_1)[4] <- "prom_estudio_dia"
 plot(density(DF_1$prom_estudio_dia, na.rm = TRUE),
      main = "Densidad de Horas de Estudio por Día",
      xlab = "Horas de estudio", col = "darkred", lwd = 2)
-
-
 
 ```
 
@@ -689,10 +687,127 @@ DF_1[[28]] <- as.factor(DF_1[[28]])  # Uso TikTok
 DF_1[[29]] <- as.factor(DF_1[[29]])  # Uso Facebook/meta o X
 
 
+
 ```
 
------------------------------------------------------------------------------------------------------------------
+```{r}
+str(DF_1)
+```
+
+------------------------------------------------------------------------
+
+**DESCRIPTORES**
+
+Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.
+
+```{r}
+library(tidyr)
+library(forcats)
+
+summary(DF_1 %>% select(prom_estudio_dia, 
+                        prom_dia_whatsapp, prom_dia_instagram, 
+                        prom_dia_linkedin, prom_dia_x, prom_dia_tiktok, 
+                        prom_ciclo_pasado))
+```
+
+```{r}
+# Función de conversión : Convertir a números (convert_to_hours)
+#Calcular promedios, sumas o correlaciones.
+#Obtener una variable total continua: total_redes_horas.
+
+convert_to_hours <- function(x) {
+  case_when(
+    x == "0 horas (no lo uso)" ~ 0,
+    x == "Entre 1-3 horas" ~ 2,
+    x == "Entre 3-6 horas" ~ 4.5,
+    x == "Entre 6-9 horas" ~ 7.5,
+    x == "Entre 9-12 horas" ~ 10.5,
+    TRUE ~ NA_real_
+  )
+}
+
+DF_1 <- DF_1 %>%
+  mutate(
+    whatsapp_horas  = convert_to_hours(prom_dia_whatsapp),
+    instagram_horas = convert_to_hours(prom_dia_instagram),
+    linkedin_horas  = convert_to_hours(prom_dia_linkedin),
+    tiktok_horas    = convert_to_hours(prom_dia_tiktok),
+    x_horas         = convert_to_hours(prom_dia_x),
+    total_redes_horas = rowSums(across(c(whatsapp_horas, instagram_horas, linkedin_horas, tiktok_horas, x_horas)), na.rm = TRUE)
+  )
+```
+
+```{r}
+# Agrupar en rangos nuevos (como "0h", "1-3h", etc.)
+# Categorizar total de redes en grupos
+# se pueden hacer boxplots comparativos por grupo.
+DF_1 <- DF_1 %>%
+  mutate(
+    grupo_redes = case_when(
+      total_redes_horas == 0 ~ "0h",
+      total_redes_horas <= 3 ~ "1-3h",
+      total_redes_horas <= 6 ~ "3-6h",
+      total_redes_horas <= 9 ~ "6-9h",
+      total_redes_horas > 9 ~ "+9h",
+      TRUE ~ NA_character_
+    ),
+    grupo_estudio = case_when(
+      prom_estudio_dia <= 1 ~ "0-1h",
+      prom_estudio_dia <= 3 ~ "2-3h",
+      prom_estudio_dia <= 5 ~ "4-5h",
+      prom_estudio_dia > 5 ~ "+5h",
+      TRUE ~ NA_character_
+    ),
+    grupo_redes = factor(grupo_redes, levels = c("0h", "1-3h", "3-6h", "6-9h", "+9h")),
+    grupo_estudio = factor(grupo_estudio, levels = c("0-1h", "2-3h", "4-5h", "+5h"))
+  )
+
+```
+
+```{r}
+# Boxplot: uso de redes vs promedio
+ggplot(DF_1 %>% filter(!is.na(grupo_redes), !is.na(prom_ciclo_pasado)), 
+       aes(x = grupo_redes, y = prom_ciclo_pasado)) +
+  geom_boxplot(fill = "skyblue") +
+  labs(title = "Promedio del ciclo según uso de redes sociales",
+       x = "Horas de redes por día", y = "Promedio ponderado") +
+  theme_minimal()
+```
+
+```{r}
+DF_1 %>%
+  filter(!is.na(grupo_redes), !is.na(prom_ciclo_pasado)) %>%
+  group_by(grupo_redes) %>%
+  summarise(
+    n = n(),
+    media = mean(prom_ciclo_pasado, na.rm = TRUE),
+    mediana = median(prom_ciclo_pasado, na.rm = TRUE),
+    sd = sd(prom_ciclo_pasado, na.rm = TRUE)
+  )
+
+```
+
+El gráfico de caja muestra que el **promedio ponderado del ciclo anterior** se mantiene **relativamente estable** en todos los grupos de horas de uso de redes sociales, con una mediana cercana a **14** en todos los casos.
+
+Según los valores estadísticos:
+
+-    El grupo con menor rendimiento promedio es el de **3-6 horas diarias**, con **una media de 12.28**.
+
+-    El grupo de **1-3 horas** tiene una media ligeramente superior (**13.45**), al igual que los grupos extremos: **0h** (13.36) y **+9h** (13.19).
+
+-    Las **medianas son todas iguales o muy cercanas (13-14)**, lo que sugiere **distribuciones similares**
+
+```{r}
+ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)), 
+       aes(x = grupo_estudio, y = prom_ciclo_pasado)) +
+  geom_boxplot(fill = "lightgreen") +
+  labs(title = "Promedio del ciclo según estudio diario",
+       x = "Horas de estudio por día", y = "Promedio ponderado") +
+  theme_minimal()
+```
+
 EDIT
+
 ```{r}
 # Cargar paquetes necesarios
 library(tidyverse)
@@ -727,4 +842,3 @@ ggplot(DF_1, aes(x = uso_redes, y = promedio, fill = uso_redes)) +
 anova_result <- aov(promedio ~ uso_redes, data = DF_1)
 summary(anova_result)
 ```
-
