@@ -806,6 +806,114 @@ ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)),
   theme_minimal()
 ```
 
+
+### Objetivo 3
+
+Explorar la relación entre el uso nocturno de redes sociales y la cantidad de horas de sueño.
+
+```{r}
+# Función para convertir el uso nocturno a valores numéricos
+convertir_uso_nocturno <- function(x) {
+  case_when(
+    x == "Nunca" ~ 0,
+    x == "Raramente (1-2 veces a la semana)" ~ 1.5,
+    x == "Ocasionalmente (3-4 veces a la semana)" ~ 3.5,
+    x == "Frecuentemente (5-6 veces a la semana)" ~ 5.5,
+    x == "Siempre (todas las noches)" ~ 7,
+    TRUE ~ NA_real_
+  )
+}
+
+# Aplicar conversión a los datos
+DF_1 <- DF_1 %>%
+  mutate(
+    uso_nocturno_numerico = convertir_uso_nocturno(uso_redes_nocturno)
+  )
+```
+
+¿Por qué usamos esta conversión? - Transformar categorías en valores numéricos permite obtener estadísticas como promedio y desviación estándar, y facilita la visualización y el modelado.
+
+```{r}
+summary(DF_1 %>% select(uso_nocturno_numerico, horas_sueno))
+```
+
+```{r}
+DF_1 %>%
+  summarise(
+    media_uso_nocturno = mean(uso_nocturno_numerico, na.rm = TRUE),
+    mediana_uso_nocturno = median(uso_nocturno_numerico, na.rm = TRUE),
+    sd_uso_nocturno = sd(uso_nocturno_numerico, na.rm = TRUE),
+    iqr_uso_nocturno = IQR(uso_nocturno_numerico, na.rm = TRUE),
+
+    media_sueno = mean(horas_sueno, na.rm = TRUE),
+    mediana_sueno = median(horas_sueno, na.rm = TRUE),
+    sd_sueno = sd(horas_sueno, na.rm = TRUE),
+    iqr_sueno = IQR(horas_sueno, na.rm = TRUE)
+  )
+```
+
+¿Qué aporta cada descriptor? - Media y mediana: indican la tendencia central. Si difieren mucho, puede haber asimetría. - Desviación estándar (sd): muestra cuán dispersos están los datos. - Rango intercuartílico (IQR): mide la dispersión en el centro de la distribución (del Q1 al Q3), menos sensible a valores extremos.
+
+Estos valores nos permiten saber cómo varía el sueño con el uso nocturno de redes.
+
+### Visualización: Boxplot
+
+```{r}
+# Crear grupos categóricos de uso nocturno
+DF_1 <- DF_1 %>%
+  mutate(
+    grupo_uso_nocturno = case_when(
+      uso_nocturno_numerico == 0 ~ "Nunca",
+      uso_nocturno_numerico <= 2 ~ "Bajo",
+      uso_nocturno_numerico <= 4 ~ "Moderado",
+      uso_nocturno_numerico > 4 ~ "Alto"
+    ) %>% factor(levels = c("Nunca", "Bajo", "Moderado", "Alto"))
+  )
+```
+
+```{r}
+# Boxplot: uso nocturno vs horas de sueño
+ggplot(DF_1 %>% filter(!is.na(grupo_uso_nocturno), !is.na(horas_sueno)),
+       aes(x = grupo_uso_nocturno, y = horas_sueno)) +
+  geom_boxplot(fill = "lightblue") +
+  labs(title = "Horas de sueño según uso nocturno de redes sociales",
+       x = "Uso nocturno de redes", y = "Horas de sueño") +
+  theme_minimal()
+```
+
+¿Qué nos muestra el boxplot? - La mediana dentro de cada grupo. - La dispersión (tamaño de la caja = IQR). - Posibles valores atípicos (outliers).
+
+Esto permite visualizar si hay una tendencia descendente del sueño a mayor uso nocturno.
+
+### Resumen por grupo
+
+```{r}
+DF_1 %>%
+  filter(!is.na(grupo_uso_nocturno), !is.na(horas_sueno)) %>%
+  group_by(grupo_uso_nocturno) %>%
+  summarise(
+    n = n(),
+    media = mean(horas_sueno, na.rm = TRUE),
+    mediana = median(horas_sueno, na.rm = TRUE),
+    sd = sd(horas_sueno, na.rm = TRUE)
+  )
+```
+
+¿Qué nos aporta esta tabla? - Permite comparar grupos de forma más precisa. - Si los promedios y medianas bajan al aumentar el uso nocturno, se evidencia una relación inversa. - La desviación estándar indica si hay más variabilidad en ciertos grupos.
+
+## Conclusión del Objetivo 3
+
+El análisis muestra una relación inversa entre el uso nocturno de redes sociales y las horas de sueño:
+
+-   A mayor uso nocturno, menor promedio de horas dormidas.
+-   El grupo "Nunca" presenta mayor sueño promedio (mayor media y mediana).
+-   Los grupos "Moderado" y "Alto" muestran menores horas de sueño y mayor dispersión, lo cual sugiere variabilidad en los hábitos de sueño.
+
+Esto puede indicar que el uso frecuente de redes sociales en la noche está afectando negativamente la cantidad y calidad del descanso, lo que podría tener repercusiones en el bienestar y rendimiento académico del estudiante.
+
+
+
+
 EDIT
 
 ### OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
