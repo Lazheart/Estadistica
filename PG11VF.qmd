@@ -65,25 +65,25 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 **Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
 
-+------------+-------------------------------------------+-------------------+------------+
-| Columna    | Variable                                  | Tipo de variable  | Escala     |
-+============+===========================================+===================+============+
-| 14         | notificaciones_estudio_diario             | Numérica discreta | Razón      |
-|            |                                           |                   |            |
-|            | (Veces que revisa redes mientras estudia) |                   |            |
-+------------+-------------------------------------------+-------------------+------------+
-| 16         | tipo_contenido_redes_sociales             | Categórica        | Nominal    |
-|            |                                           |                   |            |
-|            | (Tipo de contenido que consume)           |                   |            |
-+------------+-------------------------------------------+-------------------+------------+
-| 22         | uso_redes_academicas                      | Categórica        | Nominal    |
-|            |                                           |                   |            |
-|            | (Uso de redes para contenido académico)   |                   |            |
-+------------+-------------------------------------------+-------------------+------------+
-| 23         | satisfaccion_rendimiento_academico        | Categórica        | Ordinal    |
-|            |                                           |                   |            |
-|            | (Satisfacción con rendimiento académico)  |                   |            |
-+------------+-------------------------------------------+-------------------+------------+
++-------------+-------------------------------------------+-------------------+------------+
+| Columna     | Variable                                  | Tipo de variable  | Escala     |
++=============+===========================================+===================+============+
+| 14          | notificaciones_estudio_diario             | Numérica discreta | Razón      |
+|             |                                           |                   |            |
+|             | (Veces que revisa redes mientras estudia) |                   |            |
++-------------+-------------------------------------------+-------------------+------------+
+| 16          | tipo_contenido_redes_sociales             | Categórica        | Nominal    |
+|             |                                           |                   |            |
+|             | (Tipo de contenido que consume)           |                   |            |
++-------------+-------------------------------------------+-------------------+------------+
+| 22          | uso_redes_academicas                      | Categórica        | Nominal    |
+|             |                                           |                   |            |
+|             | (Uso de redes para contenido académico)   |                   |            |
++-------------+-------------------------------------------+-------------------+------------+
+| 23          | satisfaccion_rendimiento_academico        | Categórica        | Ordinal    |
+|             |                                           |                   |            |
+|             | (Satisfacción con rendimiento académico)  |                   |            |
++-------------+-------------------------------------------+-------------------+------------+
 
 ### Objetivo 4
 
@@ -701,6 +701,7 @@ str(DF_1)
 ### OBJETIVO 1: Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.
 
 ```{r}
+library(dplyr)
 library(tidyr)
 library(forcats)
 
@@ -708,6 +709,7 @@ summary(DF_1 %>% select(prom_estudio_dia,
                         prom_dia_whatsapp, prom_dia_instagram, 
                         prom_dia_linkedin, prom_dia_x, prom_dia_tiktok, 
                         prom_ciclo_pasado))
+
 ```
 
 ```{r}
@@ -806,9 +808,17 @@ ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)),
   theme_minimal()
 ```
 
-### Objetivo 3
+### Objetivo 2:
 
-Explorar la relación entre el uso nocturno de redes sociales y la cantidad de horas de sueño.
+**Examinar cómo varía la percepción del impacto de las redes sociales sobre la salud mental y el rendimiento académico según el sexo y el ciclo académico.**
+
+VARIABLES INVOLUCRADAS: sexo , ciclo , concentracion_rendimiento_academico , impactos_redes_salud_mental
+
+### Objetivo 3 ##ARREGLAR TODO SANTIAGO
+
+**Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
+
+VARIABLES INVOLUCRADAS: notificaciones_estudio_diario, tipo_contenido_redes_sociales, uso_redes_academicas, satisfaccion_rendimiento_academico
 
 ```{r}
 # Función para convertir el uso nocturno a valores numéricos
@@ -910,9 +920,13 @@ El análisis muestra una relación inversa entre el uso nocturno de redes social
 
 Esto puede indicar que el uso frecuente de redes sociales en la noche está afectando negativamente la cantidad y calidad del descanso, lo que podría tener repercusiones en el bienestar y rendimiento académico del estudiante.
 
-EDIT
+### OBJETIVO 4: Analizar la relación entre el uso diario de redes sociales y la participación en actividades extracurriculares, considerando la motivación percibida.
+
+Variables involucradas: prom_dia_whatsapp, prom_dia_instagram, prom_dia_linkedin, prom_dia_x, prom_dia_tiktok (puedes usar total_redes_horas),actividad_extracurricular_actual, impacto_redes_actividades_extracurriculares, frecuencia_descubrimiento_actividades_redes
 
 ### OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
+
+Variables involucradas: horas_sueño_xnoche, notificaciones_estudio_diario, dias_redes_antes_de_dormir, afecta_concentracion_rendimiento, momento_uso_redes_sociales
 
 ```{r}
 
