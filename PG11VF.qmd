@@ -1057,7 +1057,9 @@ Quienes usan redes con fines académicos tienen mediana de 6 notificaciones vs. 
 
 Los resultados muestran que el consumo de contenido académico en redes sociales se asocia con **niveles más altos de satisfacción académica** en comparación con quienes utilizan las redes principalmente para entretenimiento, información o socializar. Sin embargo, este beneficio viene acompañado de una **mayor exposición a interrupciones**: los estudiantes que usan redes con fines académicos reciben una mediana de **6 notificaciones por sesión** (frente a 5 en quienes no las usan) y presentan muchos más outliers extremos (80 vs. 18), lo que indica que, a pesar de emplear estas plataformas para el estudio, están más sujetos a distracciones puntuales.
 
-En conjunto, esto sugiere que el **tipo de contenido consumido** puede elevar la satisfacción y apoyar el aprendizaje, pero requiere **estrategias de gestión de notificaciones** (por ejemplo, silenciar alertas no críticas) para evitar interrupciones. Así, las redes sociales pueden potenciar el enfoque y el bienestar académico sólo si se utilizan de manera consciente y estructurada.
+En conjunto, esto sugiere que el **tipo de contenido consumido** puede elevar la satisfacción y apoyar el aprendizaje, pero requiere **estrategias de gestión de notificaciones** (por ejemplo, silenciar alertas no críticas) para evitar interrupciones. Así, las redes sociales pueden potenciar el enfoque y el bienestar académico sólo si se utilizan de manera consciente y estructurada
+
+Esto también es confirmado por una **investigación de la Universitat Oberta de Catalunya (UOC),** la cual concluye que el uso adecuado de redes sociales como Facebook, blogs, wikis o Twitter facilita la socialización de los estudiantes y mejora su rendimiento académico en la educación semipresencial. El estudio destaca que, al integrarse en los sistemas de aprendizaje virtual, las redes sociales transforman los grupos de estudiantes en comunidades de aprendizaje, promoviendo la colaboración y el sentido de pertenencia, lo cual impacta positivamente en la motivación y los resultados académicos.
 
 ## OBJETIVO 4: Analizar la relación entre el uso diario de redes sociales como titkok y la participación en actividades extracurriculares, considerando la motivación percibida.
 
@@ -1244,3 +1246,5 @@ Para maximizar los beneficios del estudio sin sacrificar el sueño ni la concent
 ## Fuentes Académicas:
 
 Junco, R., Heiberger, G., & Loken, E. (2011). *The effect of Twitter on college student engagement and grades*. Journal of Computer Assisted Learning, 27(2), 119–132. https://doi.org/10.1111/j.1365-2729.2010.00387.x
+
+Universitat Oberta de Catalunya. (2022, marzo 29). Las redes sociales mejoran el rendimiento académico si se usan con fines educativos. UOC News. <https://www.uoc.edu/es/news/2022/048-redessociales-elearning>
