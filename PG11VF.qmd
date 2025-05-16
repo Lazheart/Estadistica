@@ -15,31 +15,23 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 ### Objetivo 1
 
-**Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.**
+**Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales como tiktok y el promedio ponderado del ciclo anterior.**
 
-+---------------+----------------------------------------+-------------------+-------------+
-| Columna       | Variable                               | Tipo de variable  | Escala      |
-+===============+========================================+===================+=============+
-| 4             | prom_estudio_dia                       | Numérica continua | Razón       |
-|               |                                        |                   |             |
-|               | Horas de estudio por día               |                   |             |
-+---------------+----------------------------------------+-------------------+-------------+
-| 5/26/27/28/29 | prom_dia_whatsapp                      | Numérica continua | Razón       |
-|               |                                        |                   |             |
-|               | prom_dia_instagram                     |                   |             |
-|               |                                        |                   |             |
-|               | prom_dia_linkedin                      |                   |             |
-|               |                                        |                   |             |
-|               | prom_dia_x                             |                   |             |
-|               |                                        |                   |             |
-|               | prom_dia_tiktok                        |                   |             |
-|               |                                        |                   |             |
-|               | Horas de uso de redes sociales por día |                   |             |
-+---------------+----------------------------------------+-------------------+-------------+
-| 6             | prom_ciclo_pasado                      | Numérica continua | Razón       |
-|               |                                        |                   |             |
-|               | Promedio ponderado del ciclo anterior  |                   |             |
-+---------------+----------------------------------------+-------------------+-------------+
++------------+----------------------------------------+-------------------+------------+
+| Columna    | Variable                               | Tipo de variable  | Escala     |
++============+========================================+===================+============+
+| 4          | prom_estudio_dia                       | Numérica continua | Razón      |
+|            |                                        |                   |            |
+|            | Horas de estudio por día               |                   |            |
++------------+----------------------------------------+-------------------+------------+
+| 28         | prom_dia_tiktok                        | Categórica        | Ordinal    |
+|            |                                        |                   |            |
+|            | Horas de uso de redes sociales por día |                   |            |
++------------+----------------------------------------+-------------------+------------+
+| 6          | prom_ciclo_pasado                      | Numérica continua | Razón      |
+|            |                                        |                   |            |
+|            | Promedio ponderado del ciclo anterior  |                   |            |
++------------+----------------------------------------+-------------------+------------+
 
 ### Objetivo 2
 
@@ -52,7 +44,7 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 +------------+-----------------------------------------+-------------------+------------+
 | 7          | ciclo                                   | Numérica discreta | Razón      |
 +------------+-----------------------------------------+-------------------+------------+
-| 18         | concentracion_rendimiento_academico     | Categórica        | Nominal    |
+| 18         | conntracion_rendimiento_academico       | Categórica        | Nominal    |
 |            |                                         |                   |            |
 |            | (Percepción del impacto en rendimiento) |                   |            |
 +------------+-----------------------------------------+-------------------+------------+
@@ -65,61 +57,53 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 **Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
 
-+-------------+-------------------------------------------+-------------------+------------+
-| Columna     | Variable                                  | Tipo de variable  | Escala     |
-+=============+===========================================+===================+============+
-| 14          | notificaciones_estudio_diario             | Numérica discreta | Razón      |
-|             |                                           |                   |            |
-|             | (Veces que revisa redes mientras estudia) |                   |            |
-+-------------+-------------------------------------------+-------------------+------------+
-| 16          | tipo_contenido_redes_sociales             | Categórica        | Nominal    |
-|             |                                           |                   |            |
-|             | (Tipo de contenido que consume)           |                   |            |
-+-------------+-------------------------------------------+-------------------+------------+
-| 22          | uso_redes_academicas                      | Categórica        | Nominal    |
-|             |                                           |                   |            |
-|             | (Uso de redes para contenido académico)   |                   |            |
-+-------------+-------------------------------------------+-------------------+------------+
-| 23          | satisfaccion_rendimiento_academico        | Categórica        | Ordinal    |
-|             |                                           |                   |            |
-|             | (Satisfacción con rendimiento académico)  |                   |            |
-+-------------+-------------------------------------------+-------------------+------------+
++------------+-------------------------------------------+-------------------+------------+
+| Columna    | Variable                                  | Tipo de variable  | Escala     |
++============+===========================================+===================+============+
+| 14         | notificaciones_estudio_diario             | Numérica discreta | Razón      |
+|            |                                           |                   |            |
+|            | (Veces que revisa redes mientras estudia) |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 16         | tipo_contenido_redes_sociales             | Categórica        | Nominal    |
+|            |                                           |                   |            |
+|            | (Tipo de contenido que consume)           |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 22         | uso_redes_academicas                      | Categórica        | Nominal    |
+|            |                                           |                   |            |
+|            | (Uso de redes para contenido académico)   |                   |            |
++------------+-------------------------------------------+-------------------+------------+
+| 23         | satisfaccion_rendimiento_academico        | Categórica        | Ordinal    |
+|            |                                           |                   |            |
+|            | (Satisfacción con rendimiento académico)  |                   |            |
++------------+-------------------------------------------+-------------------+------------+
 
 ### Objetivo 4
 
-**Analizar la relación entre el uso diario de redes sociales y la participación en actividades extracurriculares, considerando la motivación percibida.**
+**Analizar la relación entre el uso diario de redes sociales como tiktok y la participación en actividades extracurriculares, considerando la motivación percibida.**
 
-+---------------+-----------------------------------------------+-------------------+------------+
-| Columna       | Variable                                      | Tipo de variable  | Escala     |
-+===============+===============================================+===================+============+
-| 5/26/27/28/29 | prom_dia_whatsapp                             | Numérica continua | Razón      |
-|               |                                               |                   |            |
-|               | prom_dia_instagram                            |                   |            |
-|               |                                               |                   |            |
-|               | prom_dia_linkedin                             |                   |            |
-|               |                                               |                   |            |
-|               | prom_dia_x                                    |                   |            |
-|               |                                               |                   |            |
-|               | prom_dia_tiktok                               |                   |            |
-|               |                                               |                   |            |
-|               | (Horas de uso de redes sociales por día)      |                   |            |
-+---------------+-----------------------------------------------+-------------------+------------+
-| 9             | actividad_extracurricular_actual              | Categórica        | Nominal    |
-|               |                                               |                   |            |
-|               | (Tipo de actividad extracurricular)           |                   |            |
-+---------------+-----------------------------------------------+-------------------+------------+
-| 19            | impacto_redes_actividades_extracurriculares   | Categórica        | Ordinal    |
-|               |                                               |                   |            |
-|               | (Efecto percibido en motivación)              |                   |            |
-+---------------+-----------------------------------------------+-------------------+------------+
-| 25            | frecuencia_descubrimiento_actividades_redes   | Categórica        | Ordinal    |
-|               |                                               |                   |            |
-|               | (Frecuencia de descubrimiento de actividades) |                   |            |
-+---------------+-----------------------------------------------+-------------------+------------+
++------------+-----------------------------------------------+-------------------+------------+
+| Columna    | Variable                                      | Tipo de variable  | Escala     |
++============+===============================================+===================+============+
+| 28         | prom_dia_tiktok                               | Numérica continua | Razón      |
+|            |                                               |                   |            |
+|            | (Horas de uso de redes sociales por día)      |                   |            |
++------------+-----------------------------------------------+-------------------+------------+
+| 9          | actividad_extracurricular_actual              | Categórica        | Nominal    |
+|            |                                               |                   |            |
+|            | (Tipo de actividad extracurricular)           |                   |            |
++------------+-----------------------------------------------+-------------------+------------+
+| 19         | impacto_redes_actividades_extracurriculares   | Categórica        | Ordinal    |
+|            |                                               |                   |            |
+|            | (Efecto percibido en motivación)              |                   |            |
++------------+-----------------------------------------------+-------------------+------------+
+| 25         | frecuencia_descubrimiento_actividades_redes   | Categórica        | Ordinal    |
+|            |                                               |                   |            |
+|            | (Frecuencia de descubrimiento de actividades) |                   |            |
++------------+-----------------------------------------------+-------------------+------------+
 
 ### Objetivo 5
 
-**Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la concentración durante el estudio.**
+**Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la cocentración durante el estudio.**
 
 +------------+---------------------------------------------+-------------------+------------+
 | Columna    | Variable                                    | Tipo de variable  | Escala     |
@@ -150,6 +134,9 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 ```{r setup}
 library(readr)
 library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(forcats)
 ```
 
 ```{r lectura}
@@ -183,6 +170,7 @@ ggplot(DF_1, aes(x = edad)) +
   geom_histogram(binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
   labs(title = "Distribución de la Edad", x = "Edad", y = "Frecuencia") +
   theme_minimal()
+
 ```
 
 #### Sexo
@@ -275,7 +263,6 @@ barplot(table(DF_1$ciclo),
         ylab = "Frecuencia",
         col = "#3498DB",
         border = "white")
-
 ```
 
 #### Uso diario de redes sociales (Whatsapp, Instagram, TikTok, LinkedIn, X)
@@ -324,6 +311,7 @@ names(DF_1)[8] <- "total_cursos_actuales"
 
 ```{r}
 DF_1[!(DF_1[[9]] %in% c("Arte", "Deportes", "Música", "Voluntariado", "Club Académico", "No participo en ninguna")), ]
+
 ```
 
 ```{r}
@@ -392,6 +380,7 @@ boxplot(DF_1[[13]],
         staplecol = "gray40",   
         medcol = "red") 
 names(DF_1)[13] <- "tiempo_max_sin_redes_dia"
+
 
 ```
 
@@ -698,7 +687,7 @@ str(DF_1)
 
 **DESCRIPTORES**
 
-### OBJETIVO 1: Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales y el promedio ponderado del ciclo anterior.
+## OBJETIVO 1: Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales como tiktok y el promedio ponderado del ciclo anterior.
 
 ```{r}
 library(dplyr)
@@ -706,225 +695,474 @@ library(tidyr)
 library(forcats)
 
 summary(DF_1 %>% select(prom_estudio_dia, 
-                        prom_dia_whatsapp, prom_dia_instagram, 
-                        prom_dia_linkedin, prom_dia_x, prom_dia_tiktok, 
+                        prom_dia_instagram, 
                         prom_ciclo_pasado))
-
 ```
 
 ```{r}
-# Función de conversión : Convertir a números (convert_to_hours)
-#Calcular promedios, sumas o correlaciones.
-#Obtener una variable total continua: total_redes_horas.
+library(ggplot2)
+library(dplyr)
 
-convert_to_hours <- function(x) {
-  case_when(
-    x == "0 horas (no lo uso)" ~ 0,
-    x == "Entre 1-3 horas" ~ 2,
-    x == "Entre 3-6 horas" ~ 4.5,
-    x == "Entre 6-9 horas" ~ 7.5,
-    x == "Entre 9-12 horas" ~ 10.5,
-    TRUE ~ NA_real_
-  )
-}
-
-DF_1 <- DF_1 %>%
-  mutate(
-    whatsapp_horas  = convert_to_hours(prom_dia_whatsapp),
-    instagram_horas = convert_to_hours(prom_dia_instagram),
-    linkedin_horas  = convert_to_hours(prom_dia_linkedin),
-    tiktok_horas    = convert_to_hours(prom_dia_tiktok),
-    x_horas         = convert_to_hours(prom_dia_x),
-    total_redes_horas = rowSums(across(c(whatsapp_horas, instagram_horas, linkedin_horas, tiktok_horas, x_horas)), na.rm = TRUE)
-  )
-```
-
-```{r}
-# Agrupar en rangos nuevos (como "0h", "1-3h", etc.)
-# Categorizar total de redes en grupos
-# se pueden hacer boxplots comparativos por grupo.
-DF_1 <- DF_1 %>%
-  mutate(
-    grupo_redes = case_when(
-      total_redes_horas == 0 ~ "0h",
-      total_redes_horas <= 3 ~ "1-3h",
-      total_redes_horas <= 6 ~ "3-6h",
-      total_redes_horas <= 9 ~ "6-9h",
-      total_redes_horas > 9 ~ "+9h",
-      TRUE ~ NA_character_
-    ),
-    grupo_estudio = case_when(
-      prom_estudio_dia <= 1 ~ "0-1h",
-      prom_estudio_dia <= 3 ~ "2-3h",
-      prom_estudio_dia <= 5 ~ "4-5h",
-      prom_estudio_dia > 5 ~ "+5h",
-      TRUE ~ NA_character_
-    ),
-    grupo_redes = factor(grupo_redes, levels = c("0h", "1-3h", "3-6h", "6-9h", "+9h")),
-    grupo_estudio = factor(grupo_estudio, levels = c("0-1h", "2-3h", "4-5h", "+5h"))
-  )
-
-```
-
-```{r}
-# Boxplot: uso de redes vs promedio
-ggplot(DF_1 %>% filter(!is.na(grupo_redes), !is.na(prom_ciclo_pasado)), 
-       aes(x = grupo_redes, y = prom_ciclo_pasado)) +
-  geom_boxplot(fill = "skyblue") +
-  labs(title = "Promedio del ciclo según uso de redes sociales",
-       x = "Horas de redes por día", y = "Promedio ponderado") +
-  theme_minimal()
-```
-
-```{r}
 DF_1 %>%
-  filter(!is.na(grupo_redes), !is.na(prom_ciclo_pasado)) %>%
-  group_by(grupo_redes) %>%
-  summarise(
-    n = n(),
-    media = mean(prom_ciclo_pasado, na.rm = TRUE),
-    mediana = median(prom_ciclo_pasado, na.rm = TRUE),
-    sd = sd(prom_ciclo_pasado, na.rm = TRUE)
-  )
+  filter(!is.na(prom_dia_tiktok),
+         !is.na(prom_ciclo_pasado)) %>%
+  ggplot(aes(x = prom_dia_tiktok, y = prom_ciclo_pasado)) +
+    geom_boxplot() +
+    # Punto rojo para la media
+    stat_summary(fun = mean, geom = "point", shape = 21, fill = "red", size = 3) +
+    # Etiqueta de la media usando after_stat()
+    stat_summary(
+      fun       = mean,
+      geom      = "text",
+      aes(label = round(after_stat(y), 2)),
+      vjust     = -0.7,
+      color     = "red",
+      size      = 3
+    ) +
+    labs(
+      title = "Distribución del promedio por horas de TikTok",
+      subtitle = "Con medias marcadas en rojo",
+      x     = "Horas de TikTok por día",
+      y     = "Promedio ponderado ciclo anterior"
+    ) +
+    theme_minimal() +
+    coord_flip()
 
 ```
 
-El gráfico de caja muestra que el **promedio ponderado del ciclo anterior** se mantiene **relativamente estable** en todos los grupos de horas de uso de redes sociales, con una mediana cercana a **14** en todos los casos.
+```{r}
+library(dplyr)
 
-Según los valores estadísticos:
+resumen_tiktok <- DF_1 %>%
+  filter(!is.na(prom_dia_tiktok),
+         !is.na(prom_ciclo_pasado)) %>%
+  group_by(prom_dia_tiktok) %>%
+  summarise(
+    n        = n(),
+    mínimo   = min(prom_ciclo_pasado),
+    Q1       = quantile(prom_ciclo_pasado, 0.25),
+    mediana  = median(prom_ciclo_pasado),
+    media    = mean(prom_ciclo_pasado),
+    Q3       = quantile(prom_ciclo_pasado, 0.75),
+    máximo   = max(prom_ciclo_pasado),
+    sd       = sd(prom_ciclo_pasado)
+  )
 
--   El grupo con menor rendimiento promedio es el de **3-6 horas diarias**, con **una media de 12.28**.
+print(resumen_tiktok)
 
--   El grupo de **1-3 horas** tiene una media ligeramente superior (**13.45**), al igual que los grupos extremos: **0h** (13.36) y **+9h** (13.19).
+```
 
--   Las **medianas son todas iguales o muy cercanas (13-14)**, lo que sugiere **distribuciones similares**
+-   **El promedio más alto está en el grupo de 3–6 horas** de TikTok (**13.58**).
+-   **El promedio más bajo está en el grupo de 1–3 horas** (**12.43**), ligeramente más bajo que el grupo que no usa TikTok (**12.93**).
+-   La relación **no es completamente lineal**: más horas de TikTok **no necesariamente** implican menor promedio.
+-   Puede haber otros factores influyendo (como tiempo de estudio, motivación, etc.).
 
 ```{r}
-ggplot(DF_1 %>% filter(!is.na(grupo_estudio), !is.na(prom_ciclo_pasado)), 
-       aes(x = grupo_estudio, y = prom_ciclo_pasado)) +
-  geom_boxplot(fill = "lightgreen") +
-  labs(title = "Promedio del ciclo según estudio diario",
-       x = "Horas de estudio por día", y = "Promedio ponderado") +
+ggplot(DF_1 %>% filter(!is.na(prom_estudio_dia), !is.na(prom_ciclo_pasado)), 
+       aes(x = prom_estudio_dia, y = prom_ciclo_pasado)) +
+  geom_point(alpha = 0.6, color = "darkgreen") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Relación entre horas de estudio diario y promedio del ciclo",
+       x = "Horas de estudio por día ",
+       y = "Promedio ponderado") +
   theme_minimal()
 ```
 
-### Objetivo 2:
+El gráfico de dispersión muestra que existe una **relación levemente positiva** entre las horas de estudio diario y el promedio académico del ciclo anterior. Sin embargo, la pendiente de la línea de tendencia es muy baja, lo cual indica que **el efecto del tiempo de estudio sobre el rendimiento es débil**.
 
-**Examinar cómo varía la percepción del impacto de las redes sociales sobre la salud mental y el rendimiento académico según el sexo y el ciclo académico.**
+Además, la **alta dispersión de los datos** sugiere que otros factores, como la calidad del estudio, hábitos personales o el uso de redes sociales, también podrían estar incidiendo en el rendimiento académico. El estudio por sí solo **no garantiza altos promedios**, aunque una mayor dedicación parece estar **ligeramente asociada a mejores resultados** en promedio.
+
+**Conclusiones objetivo 1:**
+
+-   El boxplot muestra que no existe una relación lineal evidente entre el uso de TikTok y el promedio ponderado del ciclo anterior. Sorprendentemente, el grupo que usa TikTok entre 3 y 6 horas presenta el promedio más alto (13.58), incluso más que quienes no usan la red. Esto coincide con estudios como el de Junco et al. (2011), que sugieren que **el uso de redes sociales no siempre está vinculado a un peor rendimiento**, ya que **factores como la intención de uso, la autorregulación y el multitasking consciente** pueden mediar positivamente en los resultados académicos.
+-   **Distribución de estudiantes por categoría**:\
+    La tabla indica que la mayoría de estudiantes se concentra en las categorías de **1–3 horas** y **0 horas**, lo que otorga mayor peso estadístico a esas observaciones. Sin embargo, los grupos extremos (9–12 horas) también tienen promedios relativamente aceptables, aunque con menor cantidad de casos.
+-   **Relación entre horas de estudio y promedio**:\
+    El gráfico de dispersión muestra una **relación débilmente positiva** entre las horas de estudio y el rendimiento académico. La pendiente de la línea de tendencia es baja y los datos están altamente dispersos, lo cual sugiere que el número de horas de estudio **no garantiza por sí solo** un buen desempeño. Esto respalda la idea de que la **calidad del estudio y otros factores personales** pueden ser igual o más determinantes que la cantidad de tiempo invertido.
+
+## Objetivo 2 Examinar cómo varía la percepción del impacto de las redes sociales sobre la salud mental y el rendimiento académico según el sexo y el ciclo académico.\*\*
 
 VARIABLES INVOLUCRADAS: sexo , ciclo , concentracion_rendimiento_academico , impactos_redes_salud_mental
 
-### Objetivo 3 ##ARREGLAR TODO SANTIAGO
+```{r}
+library(ggplot2)
+library(dplyr)
 
-**Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
+# 1) Barplot de conteos por ciclo
+DF_1 %>%
+  count(ciclo) %>%
+  ggplot(aes(x = factor(ciclo), y = n)) +
+    geom_col(fill = "lightblue") +
+    geom_text(aes(label = n), vjust = -0.5) +
+    labs(
+      title = "Distribución de estudiantes por Ciclo Académico",
+      x     = "Ciclo",
+      y     = "Número de estudiantes"
+    ) +
+    theme_minimal()
+
+
+```
+
+```{r}
+DF_1_filtrado <- DF_1 %>% filter(!is.na(impacto_redes_salud_mental), !is.na(sexo))
+
+```
+
+```{r}
+#Convertir ordinal a factor con etiquetas
+DF_1_filtrado$impacto_redes_salud_mental <- factor(DF_1_filtrado$impacto_redes_salud_mental, levels = c("1","2","3","4","5"), labels = c("1 = Poco", "2", "3", "4", "5 = Mucho"))
+
+```
+
+```{r}
+#Gráfico lado a lado para comparar percepciones entre sexos
+
+ggplot(DF_1_filtrado, aes(x = impacto_redes_salud_mental, fill = sexo)) + geom_bar(position = position_dodge()) + labs(title = "Comparación de percepción del impacto en salud mental según sexo", x = "Nivel de impacto", y = "Cantidad de encuestados", fill = "Sexo") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+En esta grafica se nos da a entender que los varones tienden percibir a las redes sociales con un mayor impacto en su salud mental,
+
+```{r}
+DF_1_filtrado <- DF_1 %>% filter(!is.na(afecta_concentracion_rendimiento), !is.na(sexo))
+```
+
+```{r}
+#Convertir variable ordinal a factor con etiquetas claras
+
+DF_1_filtrado$afecta_concentracion_rendimiento <- factor(DF_1_filtrado$afecta_concentracion_rendimiento, levels = c("1","2","3","4","5"), labels = c("1 = Poco", "2", "3", "4", "5 = Mucho"))
+
+```
+
+```{r}
+#Gráfico de barras lado a lado para comparación por sexo
+
+ggplot(DF_1_filtrado, aes(x = afecta_concentracion_rendimiento, fill = sexo)) + geom_bar(position = position_dodge()) + labs(title = "Comparación de percepción del impacto en rendimiento académico según sexo", x = "Nivel de impacto", y = "Cantidad de encuestados", fill = "Sexo") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+```{r}
+#Tabla de frecuencias de sexo
+sexo_freq <- table(DF_1$sexo) # Porcentajes redondeados 
+sexo_pct <- round(100 * sexo_freq / sum(sexo_freq), 1)
+
+
+```
+
+```{r}
+#Etiquetas combinando categoría, cantidad y porcentaje
+sexo_labels <- paste0(names(sexo_freq), "\n", sexo_freq, " (", sexo_pct, "%)")
+
+```
+
+```{r}
+#Total de observaciones
+
+total_obs <- sum(sexo_freq)
+
+```
+
+```{r}
+# Gráfico de torta con total en el título
+pie(sexo_freq, labels = sexo_labels, main = paste0("Distribución de Sexo (Total: ", total_obs, " observaciones)"), col = c("skyblue", "pink"))
+
+#Esto nos indica que del total de los encuestados la mayoria son hombres, asi que tomar que las mujeres y los varones tienden a percibir las redes sociales y su impacto en su salud mental es erronea porque las cantidades no son iguales.
+```
+
+```{r}
+# Boxplot: Nos permite visualizar si hay diferencias en la distribución del ciclo entre hombres y mujeres.
+
+boxplot(ciclo ~ sexo, data = DF_1, main = "Distribución de Ciclo por Sexo", xlab = "Sexo", ylab = "Ciclo", col = "lightblue")
+```
+
+```{r}
+DF_1_filtrado <- DF_1 %>% filter(!is.na(impacto_redes_salud_mental), !is.na(afecta_concentracion_rendimiento))
+
+```
+
+```{r}
+#Definir paleta de 5 colores
+paleta_colores <- c("#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854") # 5 colores
+
+```
+
+```{r}
+#Etiquetas para la escala ordinal
+etiquetas_impacto <- c("1 = Poco", "2", "3", "4", "5 = Mucho")
+
+```
+
+```{r}
+#Gráfico Impacto en salud mental vs Sexo
+
+ggplot(DF_1_filtrado, aes(x = sexo, fill = factor(impacto_redes_salud_mental))) + geom_bar(position = "fill") + scale_fill_manual(values = paleta_colores, name = "Impacto en salud mental", labels = etiquetas_impacto) + scale_y_continuous(labels = scales::percent_format()) + labs(title = "Impacto percibido en salud mental según sexo", x = "Sexo", y = "Proporción") + theme_minimal()
+
+```
+
+Podemos observar que la proporción de la percepción del impacto de las redes sociales en la salud mental es similar entre hombres y mujeres, lo que indica que esta percepción no varía significativamente según el sexo del encuestado. Sin embargo, se destaca que, en general, los participantes tienden a percibir un impacto moderado a alto, ubicándose mayormente en niveles 3 y 4 de la escala de percepción.
+
+```{r}
+# Gráfico Impacto en rendimiento académico vs Sexo
+ggplot(DF_1_filtrado, aes(x = sexo, fill = factor(afecta_concentracion_rendimiento))) + geom_bar(position = "fill") + scale_fill_manual(values = paleta_colores, name = "Impacto en rendimiento académico", labels = etiquetas_impacto) + scale_y_continuous(labels = scales::percent_format()) + labs(title = "Impacto percibido en rendimiento académico según sexo", x = "Sexo", y = "Proporción") + theme_minimal() 
+```
+
+La percepción del impacto de las redes sociales en el rendimiento académico es similar entre hombres y mujeres, mostrando proporciones comparables en ambos grupos. No obstante, se observa una ligera tendencia hacia una mayor percepción en el nivel máximo (5), lo que indica que algunos encuestados consideran que el efecto en su rendimiento es muy significativo.
+
+### Conclusiones objetivo 2: 
+
+Al analizar la percepción sobre el rendimiento académico, se evidencia que hombres y mujeres presentan diferencias en sus percepciones. Esta disparidad, en primera instancia, puede estar influenciada por la composición del grupo encuestado. Respecto a la distribución por ciclo académico, se observa que la mayoría de los participantes son hombres, concentrados principalmente en los ciclos 3 y 6, mientras que las mujeres se concentran en los ciclos 3 y 7. Esta desigualdad en la cantidad de encuestados por sexo indica que un análisis basado únicamente en el número absoluto de hombres y mujeres podría ser engañoso, ya que las proporciones no son equivalentes.
+
+Podemos observar que la percepción del impacto de las redes sociales en la salud mental es bastante similar entre hombres y mujeres, indicando que el sexo no influye significativamente en cómo se percibe este efecto. En general, los participantes tienden a ubicar su percepción en niveles moderados a altos (principalmente en los niveles 3 y 4), reflejando un reconocimiento generalizado del impacto que las redes sociales tienen en la salud mental.
+
+"En cuanto al rendimiento académico, la percepción también es comparable entre ambos sexos, aunque con una ligera inclinación hacia la percepción máxima (nivel 5) por parte de algunos encuestados, lo que sugiere que una parte de la muestra considera que las redes sociales afectan mucho su rendimiento.
+
+## Objetivo 3: **Evaluar si los estudiantes que consumen contenido académico en redes sociales presentan mayor satisfacción académica y menor distracción durante el estudio.**
 
 VARIABLES INVOLUCRADAS: notificaciones_estudio_diario, tipo_contenido_redes_sociales, uso_redes_academicas, satisfaccion_rendimiento_academico
 
 ```{r}
-# Función para convertir el uso nocturno a valores numéricos
-convertir_uso_nocturno <- function(x) {
-  case_when(
-    x == "Nunca" ~ 0,
-    x == "Raramente (1-2 veces a la semana)" ~ 1.5,
-    x == "Ocasionalmente (3-4 veces a la semana)" ~ 3.5,
-    x == "Frecuentemente (5-6 veces a la semana)" ~ 5.5,
-    x == "Siempre (todas las noches)" ~ 7,
-    TRUE ~ NA_real_
-  )
-}
+# Cargar librerías necesarias
+library(tidyverse)
+library(ggplot2)
 
-# Aplicar conversión a los datos
+# Visualizamos las variables relevantes
+datos_obj3 <- DF_1 |>
+  select(notificaciones_estudio_diario, tipo_contenido_redes_sociales,
+         uso_redes_academicas, satisfaccion_rendimiento_academico)
+
+# Vemos un resumen general de las variables
+summary(datos_obj3)
+```
+
+```{r}
 DF_1 <- DF_1 %>%
-  mutate(
-    uso_nocturno_numerico = convertir_uso_nocturno(uso_redes_nocturno)
-  )
-```
+  mutate(tipo_contenido_redes_sociales = fct_recode(
+    tipo_contenido_redes_sociales,
+    Entretenimiento = "Entretenimiento (ver videos, seguir deportes, escuchar música)",
+    Noticias        = "Información (noticias , actualidad)",
+    Académico       = "Educación (contenido académico)",
+    Socializar      = "Socializar"
+  ))
 
-¿Por qué usamos esta conversión? - Transformar categorías en valores numéricos permite obtener estadísticas como promedio y desviación estándar, y facilita la visualización y el modelado.
-
-```{r}
-summary(DF_1 %>% select(uso_nocturno_numerico, horas_sueno))
-```
-
-```{r}
-DF_1 %>%
-  summarise(
-    media_uso_nocturno = mean(uso_nocturno_numerico, na.rm = TRUE),
-    mediana_uso_nocturno = median(uso_nocturno_numerico, na.rm = TRUE),
-    sd_uso_nocturno = sd(uso_nocturno_numerico, na.rm = TRUE),
-    iqr_uso_nocturno = IQR(uso_nocturno_numerico, na.rm = TRUE),
-
-    media_sueno = mean(horas_sueno, na.rm = TRUE),
-    mediana_sueno = median(horas_sueno, na.rm = TRUE),
-    sd_sueno = sd(horas_sueno, na.rm = TRUE),
-    iqr_sueno = IQR(horas_sueno, na.rm = TRUE)
-  )
-```
-
-¿Qué aporta cada descriptor? - Media y mediana: indican la tendencia central. Si difieren mucho, puede haber asimetría. - Desviación estándar (sd): muestra cuán dispersos están los datos. - Rango intercuartílico (IQR): mide la dispersión en el centro de la distribución (del Q1 al Q3), menos sensible a valores extremos.
-
-Estos valores nos permiten saber cómo varía el sueño con el uso nocturno de redes.
-
-### Visualización: Boxplot
-
-```{r}
-# Crear grupos categóricos de uso nocturno
-DF_1 <- DF_1 %>%
-  mutate(
-    grupo_uso_nocturno = case_when(
-      uso_nocturno_numerico == 0 ~ "Nunca",
-      uso_nocturno_numerico <= 2 ~ "Bajo",
-      uso_nocturno_numerico <= 4 ~ "Moderado",
-      uso_nocturno_numerico > 4 ~ "Alto"
-    ) %>% factor(levels = c("Nunca", "Bajo", "Moderado", "Alto"))
-  )
 ```
 
 ```{r}
-# Boxplot: uso nocturno vs horas de sueño
-ggplot(DF_1 %>% filter(!is.na(grupo_uso_nocturno), !is.na(horas_sueno)),
-       aes(x = grupo_uso_nocturno, y = horas_sueno)) +
-  geom_boxplot(fill = "lightblue") +
-  labs(title = "Horas de sueño según uso nocturno de redes sociales",
-       x = "Uso nocturno de redes", y = "Horas de sueño") +
+summary(DF_1$notificaciones_estudio_diario)
+ggplot(DF_1, aes(x = notificaciones_estudio_diario)) +
+  geom_histogram(binwidth = 1, fill = "#3e9dd8", color = "black") +
+  labs(title = "Distribución de notificaciones mientras estudia",
+       x = "Notificaciones por sesión de estudio", y = "Frecuencia")
+
+```
+
+El gráfico muestra que la mayoría de estudiantes recibe entre 1 y 5 notificaciones durante sus sesiones de estudio. Los extremos (0 y más de 10 notificaciones) son poco frecuentes, lo que sugiere una experiencia moderada de interrupciones.
+
+Esta distribución sugiere que las distracciones tecnológicas están presentes pero no excesivamente extendidas. Sin embargo, el impacto de estas notificaciones podría depender del tipo de contenido recibido.
+
+```{r}
+DF_1 |> 
+  filter(!is.na(tipo_contenido_redes_sociales)) |> 
+  count(tipo_contenido_redes_sociales) |> 
+  ggplot(aes(x = reorder(tipo_contenido_redes_sociales, n), y = n, fill = tipo_contenido_redes_sociales)) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  labs(title = "Tipo de contenido consumido en redes sociales",
+       x = "Tipo de contenido", y = "Cantidad de estudiantes")
+
+```
+
+La mayoría de estudiantes reporta consumir contenido de tipo entretenimiento Entretenimiento”, “Información”, “Educación” y “Socializar”.
+
+El contenido estrictamente académico es el menos frecuente, lo que refleja el uso habitual de redes para fines recreativos. Esta tendencia sugiere que el contenido educativo no domina en redes, pero sí tiene una presencia creciente.
+
+El grupo que consume contenido mixto puede representar un equilibrio entre ocio y apoyo académico.
+
+```{r}
+DF_1 |> 
+  filter(!is.na(uso_redes_academicas)) |> 
+  count(uso_redes_academicas) |> 
+  ggplot(aes(x = uso_redes_academicas, y = n, fill = uso_redes_academicas)) +
+  geom_col(show.legend = FALSE) +
+  labs(title = "Uso de redes sociales con fines académicos",
+       x = "¿Usa redes académicas?", y = "Frecuencia")
+```
+
+El gráfico indica que una proporción considerable de estudiantes sí utiliza redes sociales con objetivos académicos. Esto sugiere una creciente integración de plataformas digitales como herramientas de aprendizaje informal.
+
+El uso académico puede deberse a la accesibilidad, dinamismo y variedad de formatos que ofrecen las redes. Esta variable es clave para evaluar si estas plataformas impactan en la motivación y rendimiento académico.
+
+```{r}
+summary(DF_1$satisfaccion_rendimiento_academico)
+ggplot(DF_1, aes(x = satisfaccion_rendimiento_academico)) +
+  geom_histogram(binwidth = 1, fill = "#76b947", color = "black") +
+  labs(title = "Nivel de satisfacción con el rendimiento académico",
+       x = "Satisfacción (1-5)", y = "Frecuencia")
+```
+
+La mayoría de los estudiantes declara una satisfacción entre 3 y 4 puntos en una escala del 1 al 5.
+
+Pocos estudiantes se ubican en los extremos (1 o 5), lo que sugiere una percepción moderadamente positiva.
+
+La concentración en valores medios refleja cierta conformidad, aunque no plena satisfacción. Este patrón puede deberse a múltiples factores, incluyendo hábitos de estudio, organización y uso de redes.
+
+```{r}
+ggplot(DF_1 %>% filter(!is.na(tipo_contenido_redes_sociales), !is.na(satisfaccion_rendimiento_academico)), 
+       aes(x = tipo_contenido_redes_sociales, y = satisfaccion_rendimiento_academico, fill = tipo_contenido_redes_sociales)) +
+  geom_boxplot() +
+  labs(
+    title = "Satisfacción académica según tipo de contenido en redes",
+    
+    y = "Satisfacción académica",
+  ) +
+  theme_minimal() 
+```
+
+Los estudiantes que consumen contenido académico o mixto presentan niveles de satisfacción más altos. En contraste, quienes solo consumen entretenimiento tienden a mostrar menores niveles de satisfacción.
+
+Esto sugiere que el tipo de contenido influye en la percepción del rendimiento académico. El consumo de contenido académico puede actuar como un refuerzo positivo del estudio.
+
+```{r}
+ggplot(DF_1 %>% filter(!is.na(uso_redes_academicas), !is.na(notificaciones_estudio_diario)), 
+       aes(x = uso_redes_academicas, y = notificaciones_estudio_diario, fill = uso_redes_academicas)) +
+  geom_boxplot() +
+  labs(
+    title = "Distracción (notificaciones) según uso de redes académicas",
+    x = "¿Usa redes académicas?",
+    y = "Notificaciones durante estudio"
+  ) +
   theme_minimal()
+
 ```
-
-¿Qué nos muestra el boxplot? - La mediana dentro de cada grupo. - La dispersión (tamaño de la caja = IQR). - Posibles valores atípicos (outliers).
-
-Esto permite visualizar si hay una tendencia descendente del sueño a mayor uso nocturno.
-
-### Resumen por grupo
 
 ```{r}
 DF_1 %>%
-  filter(!is.na(grupo_uso_nocturno), !is.na(horas_sueno)) %>%
-  group_by(grupo_uso_nocturno) %>%
+  filter(!is.na(uso_redes_academicas), !is.na(notificaciones_estudio_diario)) %>%
+  group_by(uso_redes_academicas) %>%
   summarise(
-    n = n(),
-    media = mean(horas_sueno, na.rm = TRUE),
-    mediana = median(horas_sueno, na.rm = TRUE),
-    sd = sd(horas_sueno, na.rm = TRUE)
+    Q1 = quantile(notificaciones_estudio_diario, 0.25),
+    Mediana = median(notificaciones_estudio_diario),
+    Q3 = quantile(notificaciones_estudio_diario, 0.75),
+    IQR = IQR(notificaciones_estudio_diario),
+    Min = min(notificaciones_estudio_diario),
+    Max = max(notificaciones_estudio_diario),
+    Outliers = sum(notificaciones_estudio_diario > (Q3 + 1.5 * IQR))
   )
+
 ```
 
-¿Qué nos aporta esta tabla? - Permite comparar grupos de forma más precisa. - Si los promedios y medianas bajan al aumentar el uso nocturno, se evidencia una relación inversa. - La desviación estándar indica si hay más variabilidad en ciertos grupos.
+Quienes usan redes con fines académicos tienen mediana de 6 notificaciones vs. 5 de quienes no; además concentran muchos más outliers (80 vs. 18), lo que sugiere que, si bien emplean las redes para estudiar, están más expuestos a interrupciones extremas.
 
-## Conclusión del Objetivo 3
+### Conclusión objetivo 3
 
-El análisis muestra una relación inversa entre el uso nocturno de redes sociales y las horas de sueño:
+Los resultados muestran que el consumo de contenido académico en redes sociales se asocia con **niveles más altos de satisfacción académica** en comparación con quienes utilizan las redes principalmente para entretenimiento, información o socializar. Sin embargo, este beneficio viene acompañado de una **mayor exposición a interrupciones**: los estudiantes que usan redes con fines académicos reciben una mediana de **6 notificaciones por sesión** (frente a 5 en quienes no las usan) y presentan muchos más outliers extremos (80 vs. 18), lo que indica que, a pesar de emplear estas plataformas para el estudio, están más sujetos a distracciones puntuales.
 
--   A mayor uso nocturno, menor promedio de horas dormidas.
--   El grupo "Nunca" presenta mayor sueño promedio (mayor media y mediana).
--   Los grupos "Moderado" y "Alto" muestran menores horas de sueño y mayor dispersión, lo cual sugiere variabilidad en los hábitos de sueño.
+En conjunto, esto sugiere que el **tipo de contenido consumido** puede elevar la satisfacción y apoyar el aprendizaje, pero requiere **estrategias de gestión de notificaciones** (por ejemplo, silenciar alertas no críticas) para evitar interrupciones. Así, las redes sociales pueden potenciar el enfoque y el bienestar académico sólo si se utilizan de manera consciente y estructurada.
 
-Esto puede indicar que el uso frecuente de redes sociales en la noche está afectando negativamente la cantidad y calidad del descanso, lo que podría tener repercusiones en el bienestar y rendimiento académico del estudiante.
-
-### OBJETIVO 4: Analizar la relación entre el uso diario de redes sociales y la participación en actividades extracurriculares, considerando la motivación percibida.
+## OBJETIVO 4: Analizar la relación entre el uso diario de redes sociales como titkok y la participación en actividades extracurriculares, considerando la motivación percibida.
 
 Variables involucradas: prom_dia_whatsapp, prom_dia_instagram, prom_dia_linkedin, prom_dia_x, prom_dia_tiktok (puedes usar total_redes_horas),actividad_extracurricular_actual, impacto_redes_actividades_extracurriculares, frecuencia_descubrimiento_actividades_redes
 
-### OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
+```{r}
+# Estadísticas descriptivas de variables clave relacionadas a redes y actividades
+summary(DF_1[, c("actividad_extracurricular_actual", 
+                 "impacto_redes_actividades_extracurriculares", 
+                 "frecuencia_descubrimiento_actividades_redes")])
+
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+# Tabla de contingencia: prom_dia_tiktok vs actividad extracurricular
+DF_1 %>%
+  filter(!is.na(prom_dia_tiktok), !is.na(actividad_extracurricular_actual)) %>%
+  count(prom_dia_tiktok, actividad_extracurricular_actual) %>%
+  pivot_wider(
+    names_from = actividad_extracurricular_actual,
+    values_from = n,
+    values_fill = 0
+  )
+
+# Gráfico de barras agrupadas: actividad extracurricular según horas de TikTok
+DF_1 %>%
+  filter(!is.na(prom_dia_tiktok), !is.na(actividad_extracurricular_actual)) %>%
+  ggplot(aes(x = actividad_extracurricular_actual, fill = prom_dia_tiktok)) +
+    geom_bar(position = "dodge") +
+    labs(
+      title = "Participación extracurricular según horas de TikTok",
+      x = "Actividad extracurricular",
+      y = "Número de estudiantes",
+      fill = "Horas de TikTok"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Barplot: Percepción del impacto de redes en actividades extracurriculares
+DF_1 %>%
+  filter(!is.na(impacto_redes_actividades_extracurriculares)) %>%
+  ggplot(aes(x = impacto_redes_actividades_extracurriculares)) +
+    geom_bar(fill = c("tomato", "lightgreen", "skyblue")) +
+    labs(
+      title = "Impacto de redes en actividades extracurriculares",
+      x = "Percepción del impacto",
+      y = "Frecuencia"
+    ) +
+    theme_minimal()
+
+# Barplot: prom_dia_tiktok (categórica) según percepción de impacto en actividades
+DF_1 %>%
+  filter(!is.na(impacto_redes_actividades_extracurriculares), !is.na(prom_dia_tiktok)) %>%
+  ggplot(aes(x = impacto_redes_actividades_extracurriculares, fill = prom_dia_tiktok)) +
+    geom_bar(position = "dodge") +
+    labs(
+      title = "Uso de TikTok según percepción del impacto en actividades",
+      x = "Impacto percibido",
+      y = "Cantidad de estudiantes",
+      fill = "Horas de TikTok"
+    ) +
+    theme_minimal()
+
+# Barplot: Frecuencia de descubrimiento de actividades por redes sociales
+DF_1 %>%
+  filter(!is.na(frecuencia_descubrimiento_actividades_redes)) %>%
+  ggplot(aes(x = factor(frecuencia_descubrimiento_actividades_redes))) +
+    geom_bar(fill = "orange") +
+    labs(
+      title = "Frecuencia de descubrimiento de actividades por redes",
+      x = "Escala (1 = nunca, 5 = siempre)",
+      y = "Frecuencia"
+    ) +
+    theme_minimal()
+
+```
+
+```{r}
+# Tabla cruzada entre participación extracurricular y frecuencia de descubrimiento
+
+(tabla_actividad_vs_descubrimiento <- table(
+   DF_1$actividad_extracurricular_actual,
+   DF_1$frecuencia_descubrimiento_actividades_redes
+ ))
+```
+
+## Conclusiones de los gráficos
+
+1.  **Participación extracurricular vs. uso de TikTok**
+    -   El grupo “Entre 1–3 horas” de TikTok concentra la mayor participación en **todas** las actividades, incluyendo quienes **no participan** en ninguna.
+    -   A partir de “3–6 horas” diarias, la participación en actividades (arte, deportes, música, voluntariado, clubes) va disminuyendo progresivamente.
+2.  **Percepción del impacto de las redes**
+    -   La mayoría (654) considera que las redes **“No tienen efecto”** en su participación extracurricular, seguido por quienes creen que **“Motiva”** (501) y finalmente los que opinan que **“Desmotiva”** (217).
+3.  **Uso de TikTok según percepción de impacto**
+    -   Independientemente de si las redes “Motivan”, “Desmotivan” o “No tienen efecto”, el perfil mayoritario sigue siendo un uso moderado (1–3 h/día).
+    -   Los usuarios intensivos (\>6 h/día) representan siempre una minoría muy reducida.
+4.  **Frecuencia de descubrimiento de actividades**
+    -   La respuesta más común es **“3 = a veces”** (492 estudiantes), y la media de la escala es 3.04, lo que indica que las redes **a veces** son fuente de nuevas actividades, pero no de forma continua.
+5.  **Interpretación global**
+    -   Un uso **moderado** de TikTok se asocia con **mayor** involucramiento extracurricular, mientras que un uso excesivo o nulo correlaciona con menor participación.
+    -   La **percepción** del impacto no altera significativamente el patrón de uso moderado.
+    -   Las redes sociales funcionan como un canal **ocasional** de descubrimiento, más no como la principal vía de información sobre actividades.
+
+## OBJETIVO 5: Evaluar la relación entre uso nocturno de redes sociales, sueño y concentración
 
 Variables involucradas: horas_sueño_xnoche, notificaciones_estudio_diario, dias_redes_antes_de_dormir, afecta_concentracion_rendimiento, momento_uso_redes_sociales
 
@@ -933,36 +1171,76 @@ Variables involucradas: horas_sueño_xnoche, notificaciones_estudio_diario, dias
 # Estadística descriptiva general
 summary(DF_1[, c("horas_sueño_xnoche", "notificaciones_estudio_diario", "dias_redes_antes_de_dormir")])
 
-# Boxplot: ¿Cómo cambian las horas de sueño según el momento del uso de redes?
-boxplot(horas_sueño_xnoche ~ momento_uso_redes_sociales, 
-        data = DF_1,
-        main = "Horas de sueño según el momento de uso de redes sociales",
-        xlab = "Momento del día con mayor uso de redes",
-        ylab = "Horas de sueño por noche",
-        col = "skyblue")
+# 2. Boxplot: Horas de sueño según el momento de uso de redes sociales
+DF_1 %>% 
+  filter(!is.na(momento_uso_redes_sociales), !is.na(horas_sueño_xnoche)) %>%
+  ggplot(aes(x = momento_uso_redes_sociales, y = horas_sueño_xnoche)) +
+    geom_boxplot(fill = "skyblue") +
+    coord_flip() +
+    labs(title="Horas de sueño vs. momento de uso nocturno",
+         x="Momento de mayor uso", y="Horas de sueño") +
+    theme_minimal()
 
-# Gráfico de barras: percepción de afectación en la concentración
-barplot(table(DF_1$afecta_concentracion_rendimiento),
-        main = "¿Las redes sociales afectan la concentración?",
-        ylab = "Frecuencia",
-        col = c("tomato", "lightgreen", "lightblue"))
+# 3. Barras: Percepción de afectación de concentración
+DF_1 %>% 
+  filter(!is.na(afecta_concentracion_rendimiento)) %>%
+  ggplot(aes(x = factor(afecta_concentracion_rendimiento))) +
+    geom_bar(fill = c("tomato","orange","lightgreen","lightblue","purple")) +
+    labs(title="¿Las redes sociales afectan la concentración?",
+         x="Nivel de afectación (1-5)", y="Frecuencia") +
+    theme_minimal()
 
-# Boxplot: ¿A mayor uso de redes antes de dormir, menos horas de sueño?
-boxplot(horas_sueño_xnoche ~ dias_redes_antes_de_dormir,
-        data = DF_1,
-        main = "Relación entre días de uso de redes antes de dormir y horas de sueño",
-        xlab = "Días por semana que usa redes antes de dormir",
-        ylab = "Horas de sueño",
-        col = "orchid")
 
-# Relación entre interrupciones por redes y concentración percibida
-tabla_concentracion <- table(DF_1$afecta_concentracion_rendimiento, DF_1$notificaciones_estudio_diario)
-print(tabla_concentracion)
+# 4. Boxplot: Sueño vs. días de uso de redes antes de dormir
+DF_1 %>% 
+  filter(!is.na(dias_redes_antes_de_dormir)) %>%
+  mutate(dias_redes = factor(dias_redes_antes_de_dormir)) %>%
+  ggplot(aes(x = dias_redes, y = horas_sueño_xnoche)) +
+    geom_boxplot(fill="orchid") +
+    labs(title="Sueño vs. días que usa redes antes de dormir",
+         x="Días/semana", y="Horas de sueño") +
+    theme_minimal()
+
+# 5. Boxplot: Notificaciones vs. percepción de concentración
+DF_1 %>%
+  filter(!is.na(afecta_concentracion_rendimiento)) %>%
+  ggplot(aes(x = factor(afecta_concentracion_rendimiento),
+             y = notificaciones_estudio_diario)) +
+    geom_boxplot() +
+    labs(title="Notificaciones vs. percepción de concentración",
+         x="Afectación de concentración (1-5)", y="Notificaciones") +
+    theme_minimal()
 
 ```
 
-Los resultados muestran una tendencia donde un mayor uso nocturno de redes sociales se asocia con una **reducción en las horas de sueño**. En el boxplot, se observa que quienes usan redes en la noche tienden a dormir menos. Además, a medida que aumentan los días de uso de redes antes de dormir, **las horas de sueño disminuyen levemente**.
+**Conclusiones Objetivo 5**
 
-Respecto a la concentración, una parte significativa de los estudiantes percibe que las redes sociales **afectan negativamente su rendimiento**. La frecuencia con la que revisan redes mientras estudian (notificaciones_estudio_diario) también parece tener relación con esta percepción.
+1.  **Uso nocturno y sueño**
 
-En conjunto, estos hallazgos sugieren una posible **relación entre el uso nocturno de redes, menor sueño y mayor distracción durante el estudio**, lo cual es consistente con estudios previos sobre hábitos digitales y rendimiento académico.
+```         
+-   El boxplot de horas de sueño según momento de uso revela que quienes concentran su mayor actividad en la madrugada (12 am–6 am) duermen menos (mediana ≈ 6 h y Q1 ≈ 5 h) que los que usan más sus redes en la noche (6 pm–12 am) o la tarde, cuyos valores centrales de sueño rondan las 6.5–7h.
+
+-   Cuando se agrupan los **días de uso antes de dormir, la mediana de horas de sueño se mantiene cerca de 6h para todos los niveles, con una ligera caída en el rango intercuartílico al usar redes 3–5 noches por semana.
+```
+
+2.  **Percepción de concentración**
+
+    -   El **barplot** muestra que la mayoría de estudiantes elige niveles **3 (neutral)** y **4 (algo afectado)**, y muy pocos reportan ni “nada” ni “muchísimo” impacto.
+
+    -   El **boxplot de notificaciones vs. afectación** pone de manifiesto una tendencia clara: conforme aumenta la percepción de distracción (de 1 a 5), la **mediana de notificaciones** por sesión crece de ≈ 5 a ≈ 8.
+
+3.  **Interpretación integrada**
+
+```         
+-    Existe evidencia de que el uso más tardío (sobre todo en madrugada) se asocia a **menor duración del sueño**, aunque el efecto neto es moderado.
+
+-    Las interrupciones digitales —medidas por el número de notificaciones— se correlacionan con una **mayor percepción de pérdida de concentración**.
+
+-    Estos resultados coinciden con estudios previos que vinculan el uso nocturno de dispositivos con peor descanso y un incremento de distracciones durante el estudio.
+```
+
+Para maximizar los beneficios del estudio sin sacrificar el sueño ni la concentración, conviene limitar el uso de redes en la madrugada y gestionar notificaciones (por ejemplo, con “No molestar”) durante las sesiones de trabajo.
+
+## Fuentes Académicas:
+
+Junco, R., Heiberger, G., & Loken, E. (2011). *The effect of Twitter on college student engagement and grades*. Journal of Computer Assisted Learning, 27(2), 119–132. https://doi.org/10.1111/j.1365-2729.2010.00387.x
