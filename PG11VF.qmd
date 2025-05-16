@@ -15,7 +15,7 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 ### Objetivo 1
 
-**Analizar la relación entre el tiempo dedicado al estudio, el uso de redes sociales como tiktok y el promedio ponderado del ciclo anterior.**
+**Analizar la relación entre el tiempo dedicado al estudio, el uso promedio de la red social tiktok y el promedio ponderado del ciclo anterior.**
 
 +------------+----------------------------------------+-------------------+------------+
 | Columna    | Variable                               | Tipo de variable  | Escala     |
@@ -79,7 +79,7 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 ### Objetivo 4
 
-**Analizar la relación entre el uso diario de redes sociales como tiktok y la participación en actividades extracurriculares, considerando la motivación percibida.**
+**Analizar la relación entre el uso diario de la red social tiktok y la participación en actividades extracurriculares, considerando la motivación percibida.**
 
 +------------+-----------------------------------------------+-------------------+------------+
 | Columna    | Variable                                      | Tipo de variable  | Escala     |
@@ -103,7 +103,7 @@ Analizar el uso de las redes sociales en el público joven universitario y su im
 
 ### Objetivo 5
 
-**Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la cocentración durante el estudio.**
+**Evaluar cómo el uso nocturno de redes sociales se asocia con el sueño y la concentración durante el estudio.**
 
 +------------+---------------------------------------------+-------------------+------------+
 | Columna    | Variable                                    | Tipo de variable  | Escala     |
@@ -909,7 +909,7 @@ ggplot(DF_1_filtrado, aes(x = sexo, fill = factor(afecta_concentracion_rendimien
 
 La percepción del impacto de las redes sociales en el rendimiento académico es similar entre hombres y mujeres, mostrando proporciones comparables en ambos grupos. No obstante, se observa una ligera tendencia hacia una mayor percepción en el nivel máximo (5), lo que indica que algunos encuestados consideran que el efecto en su rendimiento es muy significativo.
 
-### Conclusiones objetivo 2: 
+### Conclusiones objetivo 2:
 
 Al analizar la percepción sobre el rendimiento académico, se evidencia que hombres y mujeres presentan diferencias en sus percepciones. Esta disparidad, en primera instancia, puede estar influenciada por la composición del grupo encuestado. Respecto a la distribución por ciclo académico, se observa que la mayoría de los participantes son hombres, concentrados principalmente en los ciclos 3 y 6, mientras que las mujeres se concentran en los ciclos 3 y 7. Esta desigualdad en la cantidad de encuestados por sexo indica que un análisis basado únicamente en el número absoluto de hombres y mujeres podría ser engañoso, ya que las proporciones no son equivalentes.
 
@@ -1243,8 +1243,18 @@ DF_1 %>%
 
 Para maximizar los beneficios del estudio sin sacrificar el sueño ni la concentración, conviene limitar el uso de redes en la madrugada y gestionar notificaciones (por ejemplo, con “No molestar”) durante las sesiones de trabajo.
 
+Se observa que el uso de redes sociales durante horarios nocturnos, especialmente en la madrugada (entre las 12 a.m. y las 6 a.m.) tiende a asociarse con una menor duración del sueño, con una mediana aproximada de 6 horas. Este patrón se mantiene incluso al considerar la frecuencia semanal del uso de redes antes de dormir, donde se evidencia una leve disminución en las horas de sueño cuando dicho uso ocurre entre 3 y 5 días a la semana.
+
+En la concentración, los datos muestran que la mayoría de estudiantes percibe un nivel medio o moderado de afectación en su rendimiento por causa del uso de redes sociales (niveles 3 y 4 en una escala de 1 a 5).
+
+Existe una tendencia creciente en el número de notificaciones diarias conforme aumenta la percepción de distracción, lo que sugiere una posible relación entre interrupciones digitales y dificultad para concentrarse durante actividades académicas.
+
+**Estos resultados coinciden con lo expuesto en el estudio de Silva et al. (2023)**, donde se concluye que la calidad del sueño influye directamente en los procesos de atención, memoria y aprendizaje. El artículo destaca cómo los hábitos tecnológicos nocturnos, entre ellos el uso excesivo del celular o redes sociales, pueden afectar negativamente el descanso y, por ende, el desempeño académico.
+
 ## Fuentes Académicas:
 
 Junco, R., Heiberger, G., & Loken, E. (2011). *The effect of Twitter on college student engagement and grades*. Journal of Computer Assisted Learning, 27(2), 119–132. https://doi.org/10.1111/j.1365-2729.2010.00387.x
 
-Universitat Oberta de Catalunya. (2022, marzo 29). Las redes sociales mejoran el rendimiento académico si se usan con fines educativos. UOC News. <https://www.uoc.edu/es/news/2022/048-redessociales-elearning>
+Universitad Oberta de Catalunya. (2022, marzo 29). Las redes sociales mejoran el rendimiento académico si se usan con fines educativos. UOC News. <https://www.uoc.edu/es/news/2022/048-redessociales-elearning>
+
+**Silva et al. (2023).** La calidad del sueño y el proceso de enseñanza-aprendizaje un estudio de caso con estudiantes bahianos. <https://www.researchgate.net/profile/Americo-Silva/publication/369161185_La_calidad_del_sueno_y_el_proceso_de_ensenanza-aprendizaje_un_estudio_de_caso_con_estudiantes_bahianos/links/640dfb1e315dfb4cce724d01/La-calidad-del-sueno-y-el-proceso-de-ensenanza-aprendizaje-un-estudio-de-caso-con-estudiantes-bahianos.pdf>
