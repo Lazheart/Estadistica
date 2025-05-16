@@ -774,7 +774,7 @@ Además, la **alta dispersión de los datos** sugiere que otros factores, como l
 
 **Conclusiones objetivo 1:**
 
--   El boxplot muestra que no existe una relación lineal evidente entre el uso de TikTok y el promedio ponderado del ciclo anterior. Sorprendentemente, el grupo que usa TikTok entre 3 y 6 horas presenta el promedio más alto (13.58), incluso más que quienes no usan la red. Esto coincide con estudios como el de Junco et al. (2011), que sugieren que **el uso de redes sociales no siempre está vinculado a un peor rendimiento**, ya que **factores como la intención de uso, la autorregulación y el multitasking consciente** pueden mediar positivamente en los resultados académicos.
+-   El boxplot muestra que no existe una relación lineal evidente entre el uso de TikTok y el promedio ponderado del ciclo anterior. Sorprendentemente, el grupo que usa TikTok entre 3 y 6 horas presenta el promedio más alto (13.58), incluso más que quienes no usan la red. **Esto coincide con estudios como el de Junco et al. (2011)**, que sugieren que **el uso de redes sociales no siempre está vinculado a un peor rendimiento**, ya que **factores como la intención de uso, la autorregulación y el multitasking consciente** pueden mediar positivamente en los resultados académicos.
 -   **Distribución de estudiantes por categoría**:\
     La tabla indica que la mayoría de estudiantes se concentra en las categorías de **1–3 horas** y **0 horas**, lo que otorga mayor peso estadístico a esas observaciones. Sin embargo, los grupos extremos (9–12 horas) también tienen promedios relativamente aceptables, aunque con menor cantidad de casos.
 -   **Relación entre horas de estudio y promedio**:\
